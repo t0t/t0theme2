@@ -1,5 +1,5 @@
     <main>
-xxxxxxx
+
         <?php include (TEMPLATEPATH . '/layout/nav-main.php'); ?>
 
         <section role="main">
