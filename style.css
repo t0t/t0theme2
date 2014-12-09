@@ -658,7 +658,7 @@ li ul, li ol { margin: 0; }
 
 ul { list-style-type: none; }
 
-blockquote { margin: 0 0 2em 0; padding-left: 3%; border-left: 5px solid white; font-family: "Times New roman", serif; font-style: normal; line-height: 2em; }
+blockquote { margin: 0 0 2em 0; padding-left: 3%; border-left: 5px solid #93845c; font-family: "Times New roman", serif; font-style: normal; line-height: 2em; }
 blockquote p { font-size: 21px; font-size: 0.9130434783rem; margin-bottom: 0; color: #837652; }
 
 q { quotes: none; font-style: italic; }

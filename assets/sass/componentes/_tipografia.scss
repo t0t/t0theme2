@@ -93,7 +93,7 @@ ul {
 blockquote  {
 	margin : 0 0 $baselineheight 0;
 	padding-left : $gutterwidth;
-	border-left : ($paddingbase / 4) solid $bordercolor;
+	border-left : ($paddingbase / 4) solid $color-base;
 	font-family : $altfont;
 	font-style : normal;
 	line-height: $baselineheight;

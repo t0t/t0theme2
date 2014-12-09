@@ -18,6 +18,8 @@
  	</title>
 	<link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>">
 	<link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+	<!--iOS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
 </head>
 
@@ -28,7 +30,9 @@
 
 	<div class="brand">
 
-	<a href="/" class="brand__logo"><h1 class="h4 brand__description">
+	<a href="/" class="brand__logo">
+	<h1 class="h4 brand__description">
+	<?php bloginfo('name'); ?>
 	<?php bloginfo('description'); ?>
 	</h1></a>
 	
