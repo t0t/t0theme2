@@ -1,0 +1,42 @@
+// Galeria
+.galeria-fotos {
+	@include flexbox;
+	@include flex-wrap(wrap);
+    @include justify-content(space-between);
+}
+.galeria-fotos__figure {
+  position: relative;
+  width: 50%;
+    //magia!!
+    @media (min-width: $bp3) {
+      width: calc(20% - #{$gutterwidth});
+    }
+  text-align: center;
+  
+	.galeria-fotos__caption {
+    transition: all .2s;
+    font-size: 12px; // fallback + progressive enhancement
+    font-size: 1rem;
+
+	&::after {
+		width: 2em;
+		height: 2em;
+		transition: all .7s;
+		content: "+" !important;
+		position: absolute;        
+		transform: translate(-40px, -70px);
+		font-size: 12px; 
+		font-size: 2rem;
+		background-color: $white;
+		line-height: 2em;
+	    text-align: center;
+	    border-radius: 100%;
+	}
+		
+	&:hover::after {
+		content: ">" !important;
+       transform: translate(-15px, -20px);
+			background-color: $color-base;
+		}
+	}
+}

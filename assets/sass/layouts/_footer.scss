@@ -1,0 +1,39 @@
+// Modulo main-footer
+.main-footer {
+	@include max-width ($bp1);
+	@extend %inline-block;
+}
+
+
+// Info adicional
+.info-adicional {
+	display: table;
+	border-collapse: separate;
+  	border-spacing: $paddingbase;
+	@include max-width();
+	@extend %no-padding;
+
+	.info-adicional__item {
+		vertical-align: middle;
+		display: table-cell;
+		width: 50%;
+		height: 100px;
+	}
+
+	a {
+		display: block;
+		width: 100%;
+		height: 100px;
+		line-height: 1;
+
+		i {
+			font-size: 4em;
+			vertical-align: middle;
+		}
+	}
+}
+
+.footer {
+  @include grid(4, 4, 4);
+  background-color: $color-base-invert;
+}

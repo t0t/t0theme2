@@ -1,0 +1,176 @@
+html {
+  font-size: 75%; //de 16px
+  @media all and (min-width: $bp3) {
+    font-size: 100%; //de 16px
+  }
+}
+body {
+	padding-top: $gutterwidth;
+	font-family: $basefont;
+	color: $textcolor;
+	// @include background-image(bg,cover,jpg);
+}
+
+
+
+img {
+  @include max-width($bp1);
+  @extend %full-width;
+}
+	// Fondos
+	.img--bg {
+		@include background-image(logoyo,contain,png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: $color-base;
+	}
+	.img--bg-big {
+		@include background-image(image,cover,jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: $color-base;
+
+	}
+	// Mascaras
+	.img--mascara {
+		clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
+	}
+
+
+
+// LAYOUT
+.wrapper {
+  @include grid(2, 8, 2);
+}
+
+.main {
+  @include grid(2, 4, 2, 4); 
+  padding-bottom: 0;
+}
+
+
+
+// COLORES
+
+.sidebar,
+.aside {
+  background: $color-base-darken;
+}
+
+
+	.color-base {
+		background-color: $color-base;
+		&::before {
+			content: "#{$color-base}";
+		}
+	}
+
+	.color-base-invert 	{
+		background-color: $color-base-invert;
+		&::before {
+			content: "#{$color-base-invert}";
+		}
+	}
+
+	.color-base-light 	{ 
+		background-color: $color-base-light;
+		&::before {
+			content: "#{$color-base-light}";
+		}
+	}
+
+	.color-base-lighten { 
+		background-color: $color-base-lighten;
+		&::before {
+			content: "#{$color-base-lighten}";
+		}
+	}
+
+	.color-base-dark 	{ 
+		background-color: $color-base-dark;	
+		&::before {
+			content: "#{$color-base-dark}";
+		}
+	}
+
+	.color-base-darken	{ 
+		background-color: $color-base-darken;	
+		&::before {
+			content: "#{$color-base-darken}";
+		}
+	}
+
+	.white	{ 
+		background-color: $white;	
+		&::before {
+			content: "#{$white}";
+		}
+	}
+
+	.black	{ 
+		background-color: $black;
+		&::before {
+			content: "#{$black}";
+			color: $color-base-light;	
+		}
+	}
+
+
+// Web Colours
+::-moz-selection {
+	background-color : $color-base;
+	color : $black;
+	text-shadow : none;
+}
+
+::selection {
+	background-color : $color-base;
+	color : $black;
+	text-shadow : none;
+}
+
+// Animaciones
+@include keyframe(load-in-slow) {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+// PLUGINS
+
+// Contact Form 7
+.wpcf7-form-control-wrap {}
+.your-name {}
+
+input {
+	.wpcf7-form {}
+	.wpcf7-form-control {}
+	.wpcf7-text {}
+	.wpcf7-validates-as-required {}
+	.wpcf7-textarea {}
+	.wpcf7-submit {}
+	.wpcf7-response-output {}
+	.wpcf7-display-none {}
+}
+
+// WPCF7
+.wpcf7 {
+	display: table-cell;	
+	width: 75%;
+	@media screen and (max-width: $bp3) {
+		display: table-row;
+	}
+}
+
+// Mappress
+.mapp-iw {
+	color: $black;
+}
+
+// Vegas
+.nav-arrows {
+	@media all and (max-width: $bp3) {
+		display: none;
+	}
+}
+//oculta sello en contacto
+.page-template-template-contacto-php .sello { display: none; }

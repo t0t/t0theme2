@@ -1,0 +1,22 @@
+.brand {
+	display: flex;
+	flex-direction: column;
+	@media all and (min-width:$bp2) {
+		flex-direction: row;
+		align-items: center;
+	}
+}
+
+.brand__description {
+	padding: $gutterwidth;
+}
+
+a {
+	&.brand__logo {
+		flex: 1;
+		min-height: 100px;
+		@include background-image(logo,contain,svg);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}

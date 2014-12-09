@@ -1,0 +1,61 @@
+// Componente para un mini grid...
+.grid-form {
+  padding: 0 $gutterwidth*2;
+}
+@media all and (min-width: $bp3) {
+  .grid, .grid-form {
+    @include flexbox;
+    @include flex-flow(row wrap);
+    @include justify-content(space-between);
+  }
+}
+
+.grid__item {
+
+  list-style: none;
+  margin-bottom: $gutterwidth;
+  min-height: 100px;
+  border: 1px solid $color-base;
+
+  //magia!!
+  @media all and (min-width: $bp3) {
+    width: calc(25% - #{$gutterwidth});
+  }
+  @media all and (min-width: $bp2) {
+    width: calc(33.33% - #{$gutterwidth});
+  }
+  @media all and (min-width: $bp1) {
+    width: calc(25% - #{$gutterwidth});
+  }
+
+}
+
+.grid-form__item {
+
+  list-style: none;
+  margin-bottom: $gutterwidth;
+
+  //magia!!
+  @media all and (min-width: $bp3) {
+    width: calc(50% - #{$gutterwidth});
+  }
+  @media all and (min-width: 768px) {
+    width: calc(100% - #{$gutterwidth});
+  }
+  @media all and (min-width: 870px) {
+    width: calc(50% - #{$gutterwidth});
+  }
+  @media all and (min-width: $bp1) {
+    width: calc(33.33% - #{$gutterwidth});
+  }
+
+}
+
+
+// Parteme el layout en dos columnas. 
+// HugoGiraudel es un crack!
+.col-6-6 {
+  @include grid(6, 6);
+}
+
+

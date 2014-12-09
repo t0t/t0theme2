@@ -1,0 +1,17 @@
+
+.sidebar {
+	
+	background-color: #f3f3f3;
+	width: 100%;
+
+	figure {
+		> a {
+			float: left;
+			@extend %clearfix;
+		}
+		figcaption {
+			float: right;
+			width: 80%;
+		}
+	}
+}
