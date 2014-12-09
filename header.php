@@ -23,3 +23,17 @@
 
 <!-- Aquí acaba el head de mi web -->
 <body <?php body_class(["unaclase", "otraclase"]); ?>>
+
+<header class="header">
+
+	<div class="brand">
+
+	<a href="/" class="brand__logo"><h1 class="h4 brand__description">
+	<?php bloginfo('description'); ?>
+	</h1></a>
+	
+	</div>
+	
+	<div class="banner"></div>
+
+</header>
