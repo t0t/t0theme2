@@ -17,7 +17,7 @@
     <div class="img--bg-big well well--img">
         <h3><?php the_sub_field("title"); ?></h3>
         <p><?php the_sub_field("description"); ?></p>
-        <button class="btn btn--image"><a href="<?php the_sub_field("call_to_action"); ?>">Call to action</a></button>
+        <button class="btn btn--image"><a href="<?php the_sub_field("call_to_action"); ?>">Últimos posts</a></button>
     </div>
 
 

@@ -16,6 +16,7 @@ body {
 img {
   @include max-width($bp1);
   @extend %full-width;
+  height: auto;
 }
 	// Fondos
 	.img--bg {
