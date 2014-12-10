@@ -3,6 +3,7 @@
 	@include flexbox;
 	@include flex-wrap(wrap);
     @include justify-content(space-between);
+    
 }
 .galeria-fotos__figure {
   position: relative;
