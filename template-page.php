@@ -20,8 +20,6 @@
 
 	</section>
 
-	<?php get_template_part( 'templates/nav', 'main' ); ?>
-
 
     <section role="main">
             

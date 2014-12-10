@@ -3,6 +3,13 @@
 Template Name: Blog
 */
 ?>
+<?php get_header(); ?>
+
+<!-- Fixed Nav -->
+<?php get_template_part( 'templates/nav', 'main' ); ?>
+
+<?php get_template_part('templates/template', 'page' ); ?>
+<?php //include (TEMPLATEPATH . '/templates/template-page.php'); ?>
 
 <?php get_template_part('templates/page', 'header'); ?>
 <?php if (!have_posts()) : ?>
@@ -130,3 +137,4 @@ Template Name: Blog
 	<?php wp_reset_postdata(); ?>
 
 </section>
+<?php get_footer(); ?>

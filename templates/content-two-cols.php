@@ -38,8 +38,6 @@
                          </footer>
                      </article>
 
-                    <?php comments_template(); ?>
-
                     <?php endwhile; ?>
                     <!-- post navigation -->
                     <?php else: ?>

@@ -11,7 +11,7 @@
                     
                     <h2>
                         <a href="<?php the_permalink(); ?>">
-                            Este es el <?php the_title(); ?>
+                            <?php the_title(); ?>
                         </a>
                     </h2>
 

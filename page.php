@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-
-<?php include (TEMPLATEPATH . '/templates/layout-page.php'); ?>
+vvv
+<?php get_template_part('template', 'page' ); ?>
+<?php //include (TEMPLATEPATH . '/templates/template-page.php'); ?>
 
 <?php get_footer(); ?>

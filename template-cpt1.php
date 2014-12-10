@@ -20,12 +20,8 @@ Template Name: CPT
 
 	<?php 
 		$this_post = $post->ID;
-		$loop = new WP_Query( array( 
-								'post_type' => 'cpt',
-								'post__not_in' => array($this_post),
-								'category_name' => '' 
-								)); 
-		?>	
+		$loop = new WP_Query( array( 'post_type' => 'cpt', 'post__not_in' => array($this_post), 'category_name' => '' )); 
+	?>	
 
 	<dl>
 		<dt>Listado de <?php the_title() ?></dt>
