@@ -2,43 +2,46 @@
     
     <section class="main__content__section">
 
+        <!-- Header -->
+        <?php get_template_part('templates/page', 'header'); ?>
+
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             
-            <!-- post -->
-            <article class="main__article article-post">
+        <!-- post -->
+        <article class="main__article article-post">
                 
-                <header>
-                    
-                    <h2>
-                        <a href="<?php the_permalink(); ?>">
-                            <?php the_title(); ?>
-                        </a>
-                    </h2>
+            <header>
+                        
+                <h2>
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_title(); ?>
+                    </a>
+                </h2>
 
-                </header>
+            </header>
 
-                <?php if(is_home()): ?>
-                    <?php the_excerpt(); ?>
-                <?php else: ?>
+        <?php if(is_home()): ?>
+            <?php the_excerpt(); ?>
+        <?php else: ?>
 
-                    <figure class="article-post__figure">
-                        <a href="<?php the_permalink(); ?>">
-                        <?php the_post_thumbnail('thumbnail'); ?><figcaption>Caption</figcaption></a>
-                    </figure>
-                    
-                    <p class="basefont">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis excepturi, sequi consequuntur. Magni, ipsa adipisci ea nam, repellendus illum, possimus minima nulla blanditiis eveniet facere porro dolor reiciendis officia autem.
-                    </p>
+            <figure class="article-post__figure">
+                <a href="<?php the_permalink(); ?>">
+                <?php the_post_thumbnail('thumbnail'); ?><figcaption>Caption</figcaption></a>
+            </figure>
+                        
+            <p class="basefont">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis excepturi, sequi consequuntur. Magni, ipsa adipisci ea nam, repellendus illum, possimus minima nulla blanditiis eveniet facere porro dolor reiciendis officia autem.
+            </p>
 
-                    <p><?php the_content(); ?></p>
+            <p><?php the_content(); ?></p>
                 
-                <?php endif; ?>
+        <?php endif; ?>
                 
-                <footer>
-                    <?php the_tags(); ?>
-                </footer>
+            <footer>
+                <?php the_tags(); ?>
+            </footer>
             
-            </article>
+        </article>
 
         <?php endwhile; ?>
         <!-- post navigation -->

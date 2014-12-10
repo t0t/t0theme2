@@ -3,17 +3,26 @@
 Template Name: CPT
 */
 ?>
+<?php get_header(); ?>
 
-<?php get_template_part('templates/page', 'header'); ?>
+<main>
+
+ 	<?php get_template_part('templates/nav', 'main' ); ?>
+
+    <section role="main">
+
+    <?php get_template_part('templates/content', 'cpt'); ?>
+
+    </section>
+
+</main>
+
+<?php get_footer(); ?>
 
 
-<?php while (have_posts()) : the_post(); ?>
-  <?php //get_template_part('templates/page', 'header'); ?>
-	<section>
-	<?php //get_template_part('templates/content', 'page'); ?>
-	<?php //get_template_part('templates/content', 'page-template'); ?>
-	</section>
-<?php //endwhile; ?>
+
+
+
 
 
 <section>

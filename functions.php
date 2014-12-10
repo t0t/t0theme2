@@ -1,6 +1,5 @@
 <?php
 
-
 add_theme_support( 'post-thumbnails' );
 
 // register_sidebars( 2, array( 'name' => 'Zona %d' ) ); //sidebar-1, sidebar-2

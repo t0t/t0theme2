@@ -1,5 +1,15 @@
 <?php get_header(); ?>
 
-<?php get_template_part('layout/layout', 'home'); ?>
+<main>
+
+ 	<?php get_template_part('templates/nav', 'main' ); ?>
+
+        <section role="main">
+
+            <?php get_template_part('templates/content'); ?>
+
+        </section>
+
+</main>
 
 <?php get_footer(); ?>
