@@ -1,18 +1,9 @@
+<div class="main">
 
-    <div class="main">
-
-        <?php get_template_part( 'templates/nav', 'main' ); ?>
-
-        <section role="main">
-
-            <?php //include (TEMPLATEPATH . '/templates/main-options.php') ?>
-
-            <?php //include (TEMPLATEPATH . '/templates/main-tabs.php') ?>
+	<section role="main">
             
-            <?php get_template_part( 'templates/main', 'content' ); ?>
+		<?php get_template_part( 'templates/content' ); ?>
 
-            <?php //include (TEMPLATEPATH . '/templates/main-content-two-cols.php') ?>
-
-        </section>
+	</section>
         
-    </div>
+</div>

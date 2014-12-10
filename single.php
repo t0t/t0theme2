@@ -1,5 +1,11 @@
 <?php get_header(); ?>
 
-<?php get_template_part('templates/layout', 'single'); ?>
+<main>
 
-<?php //get_footer(); ?>
+ 	<?php get_template_part('templates/nav', 'main' ); ?>
+ 	
+    <?php get_template_part('template', 'single'); ?>
+
+</main>
+
+<?php get_footer(); ?>

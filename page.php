@@ -3,12 +3,8 @@
 <main>
 
  	<?php get_template_part('templates/nav', 'main' ); ?>
-
-        <section role="main">
-
-            <?php get_template_part('template', 'page'); ?>
-
-        </section>
+ 	
+    <?php get_template_part('template', 'page'); ?>
 
 </main>
 

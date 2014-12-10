@@ -3,22 +3,14 @@
     <section class="main__content__section">
 
         <!-- Header -->
-        <?php get_template_part('templates/page', 'header'); ?>
+        <?php //get_template_part('templates/page', 'header'); ?>
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             
         <!-- post -->
         <article class="main__article article-post">
                 
-            <header>
-                        
-                <h2>
-                    <a href="<?php the_permalink(); ?>">
-                        <?php the_title(); ?>
-                    </a>
-                </h2>
-
-            </header>
+            <header><h2><?php the_title(); ?></h2></header>
 
         <?php if(is_home()): ?>
             <?php the_excerpt(); ?>
