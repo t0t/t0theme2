@@ -132,7 +132,7 @@
 		padding : $paddingbase / 2;
 	}
 
-	.well--panoramica {
+	.well--img {
 		@include max-width($bp1);
 		@include size(100%, 600px);
 		border-radius: 0;

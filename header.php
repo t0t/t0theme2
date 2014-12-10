@@ -6,7 +6,7 @@
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>
@@ -30,11 +30,11 @@
 
 	<div class="brand">
 
-	<a href="/" class="brand__logo">
-	<h1 class="h4 brand__description">
-	<?php bloginfo('name'); ?>
-	<?php bloginfo('description'); ?>
-	</h1></a>
+		<a href="/" class="brand__logo">
+		<h1 class="h4 brand__description">
+		<?php bloginfo('name'); ?>
+		<?php bloginfo('description'); ?>
+		</h1></a>
 	
 	</div>
 	

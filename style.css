@@ -758,8 +758,8 @@ Main navbar
 
 .well--small { padding: 10px; }
 
-.well--panoramica { margin-left: auto; margin-right: auto; max-width: 1280px; width: 100%; width: 100%; min-height: 600px; border-radius: 0; }
-.well--panoramica p, .well--panoramica h3 { color: white; }
+.well--img { margin-left: auto; margin-right: auto; max-width: 1280px; width: 100%; width: 100%; min-height: 600px; border-radius: 0; }
+.well--img p, .well--img h3 { color: white; }
 
 /*------------------------------------*\ $FORMULARIOS
 \*------------------------------------*/
@@ -851,9 +851,13 @@ input:required:focus:invalid { background-color: #a09168; border: 1px solid #938
 
 input:required:focus:valid { background-color: #4dff4d; border: 1px solid green; }
 
-.modulo-list { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
+.list { -webkit-flex: 1; -ms-flex: 1; flex: 1; text-align: center; }
 
-.modulo-list--horizontal { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+.list__item::before { content: "\2714"; }
+
+.list-group { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+
+.list-group--horizontal { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
 
 .galeria-fotos { display: -moz-flex; /* OLD - Firefox 19 */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ /* OLD - iOS 6-, Safari 3.1-6 */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: justify; -webkit-justify-content: space-between; -moz-justify-content: space-between; justify-content: space-between; }
 

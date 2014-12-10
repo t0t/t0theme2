@@ -5,8 +5,10 @@
         <!-- post -->
         <article class="main__article article-post">
                 
+            <?php if (!is_front_page() ): ?>
             <header><h2><?php the_title(); ?></h2></header>
-
+            <? endif; ?>
+            
             <p><?php the_content(); ?></p>
 
             <footer><?php the_tags(); ?></footer>

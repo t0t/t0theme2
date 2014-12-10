@@ -5,15 +5,11 @@ Template Name: Portada
 ?>
 <?php get_header(); ?>
 
-<main>
+<main role="main">
 
  	<?php get_template_part('templates/nav', 'main' ); ?>
 
-        <section role="main">
-
-            <?php get_template_part('templates/content'); ?>
-
-        </section>
+    <?php get_template_part('templates/content'); ?>
 
 </main>
 

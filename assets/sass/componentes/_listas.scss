@@ -1,14 +1,24 @@
-// Modulo List
-.modulo-list {
+// Componente Lista
+.list {
+	flex: 1;
+	text-align: center;
+}
+	.list__item {}
+	.list__item::before {
+		content: "\2714";
+	}
+
+
+.list-group {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 }
-
-	.modulo-list--horizontal {
+	.list-group--horizontal {
 		flex-direction: column;
 	}
-	.modulo-list__item {}
-	.modulo-list__ordered {}
-	.modulo-list__unordered {}
-	.modulo-list__definition {}
+
+.list--ordered {}
+.list--unordered {}
+.list--definition {}
+	

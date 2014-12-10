@@ -32,24 +32,24 @@
 
     <h2>Lists</h2>
 
-	<section class="modulo-list">
+	<section class="lista">
 
-		<ol class="modulo-list__ordered">
-		    <li class="modulo-list__item">Bread</li>
-		    <li class="modulo-list__item">Milk</li>
-		    <li class="modulo-list__item">Eggs</li>
-		    <li class="modulo-list__item">Butter</li>
+		<ol class="lista__ordered">
+		    <li class="lista__item">Bread</li>
+		    <li class="lista__item">Milk</li>
+		    <li class="lista__item">Eggs</li>
+		    <li class="lista__item">Butter</li>
 		</ol>
 
-		<ul class="modulo-list__unordered">
-			<li class="modulo-list__item">Elemento lista</li>
-			<li class="modulo-list__item">Elemento lista</li>
-			<li class="modulo-list__item">Elemento lista xx</li>
-			<li class="modulo-list__item">Elemento lista</li>
-			<li class="modulo-list__item">Elemento</li>
+		<ul class="lista__unordered">
+			<li class="lista__item">Elemento lista</li>
+			<li class="lista__item">Elemento lista</li>
+			<li class="lista__item">Elemento lista xx</li>
+			<li class="lista__item">Elemento lista</li>
+			<li class="lista__item">Elemento</li>
 		</ul>
 
-		<dl class="modulo-list__definition">
+		<dl class="lista__definition">
 			<dt>Titulo</dt>
 			<dd>item lista de definición</dd>
 			<dd>item lista</dd>
