@@ -1040,12 +1040,21 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/componentes\/modulo-list.kit": {
+	"\/includes\/componentes\/lists.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/componentes\/lists.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/componentes\/lists.kit": {
 		"fileType": 2048,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/componentes\/modulo-list.kit",
-		"outputAbbreviatedPath": "\/includes\/componentes\/modulo-list.html",
+		"inputAbbreviatedPath": "\/includes\/componentes\/lists.kit",
+		"outputAbbreviatedPath": "\/includes\/componentes\/lists.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -1566,7 +1575,7 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "T0THEME + Style Guide",
+	"displayValue": "T0THEME 2 + Style Guide",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-facepalm"
 	},

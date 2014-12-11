@@ -246,7 +246,7 @@ article, aside, figure, footer, header, hgroup, nav, section { display: block; }
 .info-adicional a { display: block; width: 100%; height: 100px; line-height: 1; }
 .info-adicional a i { font-size: 4em; vertical-align: middle; }
 
-.footer { background-color: #5c6b93; }
+.footer { background-color: rgba(0, 255, 219, 0.2); }
 
 html { font-size: 75%; }
 @media all and (min-width: 600px) { html { font-size: 100%; } }
@@ -272,8 +272,8 @@ img { margin-left: auto; margin-right: auto; max-width: 1280px; width: 100%; hei
 .color-base { background-color: #93845c; }
 .color-base::before { content: "#93845c"; }
 
-.color-base-invert { background-color: #5c6b93; }
-.color-base-invert::before { content: "#5c6b93"; }
+.color-base-invert { background-color: rgba(0, 255, 219, 0.2); }
+.color-base-invert::before { content: "rgba(0, 255, 219, 0.2)"; }
 
 .color-base-light { background-color: #998a60; }
 .color-base-light::before { content: "#998a60"; }
@@ -562,20 +562,20 @@ input[type="submit"].btn:hover { border-color: #93845c; }
 */
 .btn--disabled { -webkit-opacity: 0.5; -moz-opacity: 0.5; opacity: 0.5; cursor: default; }
 
-.btn--slidemenu { width: 50px; min-height: 50px; border-radius: 5px; color: rgba(0, 0, 0, 0.3); background-color: #5c6b93; }
-.btn--slidemenu:hover { color: #5c6b93; background-color: #93845c; }
+.btn--slidemenu { width: 50px; min-height: 50px; border-radius: 5px; color: rgba(0, 0, 0, 0.3); background-color: rgba(0, 255, 219, 0.2); }
+.btn--slidemenu:hover { color: rgba(0, 255, 219, 0.2); background-color: #93845c; }
 .btn--slidemenu:visited { color: #93845c; }
 
 /**
 * Botones
 */
 .btn--slider { background-color: #93845c; color: #746848; }
-.btn--slider:hover { color: #d6dae5; }
+.btn--slider:hover { color: rgba(204, 255, 248, 0.2); }
 .btn--slider:visited { color: #746848; }
 
-.btn--info { background-color: #5c6b93; color: #0d1016; }
-.btn--info:hover { color: #d6dae5; }
-.btn--info:visited { color: #0d1016; }
+.btn--info { background-color: rgba(0, 255, 219, 0.2); color: rgba(0, 51, 44, 0.2); }
+.btn--info:hover { color: rgba(204, 255, 248, 0.2); }
+.btn--info:visited { color: rgba(0, 51, 44, 0.2); }
 
 .btn--error { background-color: red; color: #330000; }
 .btn--error:hover { color: #ffcccc; }
@@ -613,7 +613,7 @@ input[type="submit"].btn:hover { border-color: #93845c; }
 
 .btn--image a { color: #93845c; }
 
-.btn--invert { border-color: #7885aa; }
+.btn--invert { border-color: rgba(51, 255, 226, 0.2); }
 
 hr { clear: both; margin: 2em 0; padding: 0; height: 1px; border: 0; border-top: 1px dotted white; }
 
@@ -730,7 +730,7 @@ Main navbar
 
 /*------------------------------------*\ $WIDGETS
 \*------------------------------------*/
-.idiomas { margin: 1em; display: table; display: none; width: 90px; float: right; padding: 8px 35px 8px 14px; line-height: 1; background-color: #5c6b93; }
+.idiomas { margin: 1em; display: table; display: none; width: 90px; float: right; padding: 8px 35px 8px 14px; line-height: 1; background-color: rgba(0, 255, 219, 0.2); }
 .idiomas li { display: table-cell; font-size: 18px; font-size: 0.7826086957rem; }
 
 .alert { display: table; width: 100%; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 2em; padding: 8px 35px 8px 14px; background-color: #93845c; border: 1px solid #837652; font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-size: 0.7826086957rem; color: black; }
@@ -746,7 +746,7 @@ Main navbar
 
 .alert--error { background-color: #ff9999; border-color: #ff6666; color: red; }
 
-.alert--info { padding: 6px 0; line-height: 1; border: none; background-color: #5c6b93; color: black; }
+.alert--info { padding: 6px 0; line-height: 1; border: none; background-color: rgba(0, 255, 219, 0.2); color: black; }
 
 .alert--inverse { background-color: #6c7ba3; border-color: black; color: white; }
 
@@ -754,7 +754,7 @@ Main navbar
 .well p { margin-left: auto; margin-right: auto; max-width: 600px; width: 100%; }
 .well p:last-child { margin-bottom: 0; }
 
-.well--large { padding: 80px 80px; background-color: #5c6b93; border: none; border-radius: none; box-shadow: none; }
+.well--large { padding: 80px 80px; background-color: rgba(0, 255, 219, 0.2); border: none; border-radius: none; box-shadow: none; }
 
 .well--small { padding: 10px; }
 

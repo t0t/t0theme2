@@ -62,7 +62,7 @@ $baseletterspacing 	: 1px;
  * Brand stuff
  */
 $color-base			: rgb(147,132,92);
-$color-base-invert 	: complement($color-base);
+$color-base-invert 	: rgba(0,255,219,0.2);
 $color-base-light	: lighten($color-base, 2%);
 $color-base-lighten	: lighten($color-base, 10%);
 $color-base-dark	: darken($color-base, 5%);
