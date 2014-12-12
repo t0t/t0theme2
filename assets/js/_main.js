@@ -4,9 +4,9 @@
 
 (function($) {
     $(function() {
-        $('.jcarousel').jcarousel();
+        $('.carousel').jcarousel();
 
-        $('.jcarousel-control-prev')
+        $('.carousel-control-prev')
             .on('jcarouselcontrol:active', function() {
                 $(this).removeClass('inactive');
             })
@@ -17,7 +17,7 @@
                 target: '-=1'
             });
 
-        $('.jcarousel-control-next')
+        $('.carousel-control-next')
             .on('jcarouselcontrol:active', function() {
                 $(this).removeClass('inactive');
             })
@@ -28,7 +28,7 @@
                 target: '+=1'
             });
 
-        $('.jcarousel-pagination')
+        $('.carousel-pagination')
             .on('jcarouselpagination:active', 'a', function() {
                 $(this).addClass('active');
             })

@@ -5,49 +5,52 @@
     @include justify-content(space-between);
     background-color: lighten($color-base, 40%);
     padding: $gutterwidth;
-    //@include max-width($bp2);
 }
-.galeria-fotos__title {
-	flex-basis: 100%;
-	margin-bottom: $gutterwidth/2;
-}
-.galeria-fotos__description {
-	color: $color-base;
-	flex-basis: 100%;
-}
-.galeria-fotos__figure {
-  position: relative;
-  width: 50%;
-    //magia!!
-    @media (min-width: $bp3) {
-      width: calc(20% - #{$gutterwidth});
-    }
-  text-align: center;
-  
-	.galeria-fotos__caption {
-    transition: all .2s;
-    font-size: 12px; // fallback + progressive enhancement
-    font-size: 1rem;
 
-	&::after {
-		width: 2em;
-		height: 2em;
-		transition: all .7s;
-		content: "+" !important;
-		position: absolute;        
-		transform: translate(-40px, -70px);
-		font-size: 12px; 
-		font-size: 2rem;
-		background-color: $white;
-		line-height: 2em;
-	    text-align: center;
-	    border-radius: 100%;
+	.galeria-fotos__title {
+		@extend %flex-basis-fullwidth;
+		margin-bottom: $gutterwidth/2;
 	}
-		
-	&:hover::after {
-		content: ">" !important;
-       transform: translate(-15px, -20px);
-			background-color: $color-base;
+
+	.galeria-fotos__description {
+		color: $color-base;
+		@extend %flex-basis-fullwidth;
+	}
+
+	.galeria-fotos__figure {
+		position: relative;
+		width: 50%;
+		@extend %text-center;
+
+    	//magia!!
+    	@media (min-width: $bp3) {
+      		width: calc(20% - #{$gutterwidth});
+    	}
+  
+		.galeria-fotos__caption {
+	    	transition: all .2s;
+	    	font-size: 12px; // fallback + progressive enhancement
+	    	font-size: 1rem;
+
+			&::after {
+			width: 2em;
+			height: 2em;
+			transition: all .7s;
+			content: "+" !important;
+			position: absolute;        
+			transform: translate(-40px, -70px);
+			font-size: 12px; 
+			font-size: 2rem;
+			background-color: $white;
+			line-height: 2em;
+		    @extend %text-center;
+		    border-radius: 100%;
+			}
+			
+			&:hover::after {
+				content: ">" !important;
+				transform: translate(-15px, -20px);
+				background-color: $color-base;
+			}
 		}
 	}
-}

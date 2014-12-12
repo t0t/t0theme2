@@ -60,49 +60,55 @@
 
     <section>
 
+        <h2 class="carousel__title">
+            <?php the_sub_field("title"); ?>
+        </h2>
+        <h3 class="carousel__description">
+            <?php the_sub_field("description"); ?>
+        </h3>
+
     <?php 
     $loop = new WP_Query( array( 
               'post_type' => 'cpt',
               'category_name' => '' 
               )); 
     ?>
-    
-        <div class="jcarousel">
-    
-            <ul>
-
-                <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-                        
+        
+        <div class="carousel">
+        
+            <ul class="carousel__list">
+            
+            <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+                                    
                 <li>
-                <? if ( has_post_thumbnail() ) { ?>
-                
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="jcarousel__producto">
+
+                    <? if ( has_post_thumbnail() ) { ?>
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="carousel__item">
                     <?php the_post_thumbnail('medium'); ?>
-                    <!-- <img src="<?php //echo get_template_directory_uri(); ?>/assets/img/hexagono_productos.svg" alt="t0theme" class="logo-img"> -->
                     <h2 class="h1"><? the_title(); ?></h2>
                     </a>
+            
+                    <?}else {?>
+                            
+                    <?}?>
 
-                <?}else {?>
-                
-                <?}?>
                 </li>
-                
-              <?php endwhile; ?>
-              <?php wp_reset_postdata(); ?>
-
+                            
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+            
             </ul>
 
+        </div>
 
             <!-- Prev/next controls -->
-            <a href="#" class="jcarousel-control-prev btn btn--primary">
+            <a href="#" class="carousel-control-prev btn btn--primary">
             <span class="icon-arrow-left"></span>
             </a>
             
-            <a href="#" class="jcarousel-control-next btn btn--primary">
+            <a href="#" class="carousel-control-next btn btn--primary">
             <span class="icon-arrow-right"></span>
             </a>
-
-        </div>
         
     </section>
 

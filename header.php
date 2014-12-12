@@ -16,7 +16,7 @@
 		 	bloginfo( 'name' ); 
 	 	?>
  	</title>
-	<link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+	<!-- <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'> -->
 	<!--iOS -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
