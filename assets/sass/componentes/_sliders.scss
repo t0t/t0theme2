@@ -2,8 +2,9 @@
 .jcarousel {
 	position: relative;
 	overflow: hidden;
-	@extend %full-width; //width:100%
+	// @extend %full-width; //width:100%
 	// border: $borde;
+	width: 100%;
 
 	ul {
 		width: 20000em;
@@ -15,7 +16,7 @@
 	li {
 		@include font-size(16);
 		float: left;
-		width: 20em;
+		width: 50em;
  		// border: $borde;
 		// height: 100%;
 		position: relative;

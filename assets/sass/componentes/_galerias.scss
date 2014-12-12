@@ -3,7 +3,17 @@
 	@include flexbox;
 	@include flex-wrap(wrap);
     @include justify-content(space-between);
-    
+    background-color: lighten($color-base, 40%);
+    padding: $gutterwidth;
+    //@include max-width($bp2);
+}
+.galeria-fotos__title {
+	flex-basis: 100%;
+	margin-bottom: $gutterwidth/2;
+}
+.galeria-fotos__description {
+	color: $color-base;
+	flex-basis: 100%;
 }
 .galeria-fotos__figure {
   position: relative;

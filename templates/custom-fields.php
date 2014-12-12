@@ -18,38 +18,99 @@
         <h1 class="altheader"><?php the_sub_field("title"); ?></h1>
         <p><?php the_sub_field("description"); ?></p>
         <button class="btn btn--image"><a href="<?php the_sub_field("call_to_action"); ?>">Work in progress</a></button>
-    </div>
+    </div>   
 
 
-    <?php elseif(get_row_layout() == "gallery"): //Layout Gallery ?>
 
-    <h3><?php the_sub_field("title"); ?></h3>
-    <h4><?php the_sub_field("description"); ?></h4>
+    <?php elseif(get_row_layout() == "gallery"): // Layout Gallery ?>
+
+    <section>
+    
+        <div class="galeria-fotos">
+
+            <h2 class="galeria-fotos__title">
+                <?php the_sub_field("title"); ?>
+            </h2>
+            <h3 class="galeria-fotos__description">
+                <?php the_sub_field("description"); ?>
+            </h3>
             
-    <section class="galeria-fotos">
-            
-        <?php
-        $images = get_sub_field('gallery');
-             
-        if( $images ): ?>
-            
-            <?php foreach( $images as $image ): ?>
-                <figure class="galeria-fotos__figure">
-                    <a href="<?php echo $image['url']; ?>" data-lightbox="serie" data-title="<?php echo $image['description']; ?>">
-                    <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" class="img--rounded" />
-                    <figcaption class="galeria-fotos__caption"><?php echo $image['caption']; ?>xxx</figcaption></a>
-                    </figure>
-            <?php endforeach; ?>
-            
-        <?php endif; ?>
+            <?php
+            $images = get_sub_field('gallery');
+                 
+            if( $images ): ?>
+                
+                <?php foreach( $images as $image ): ?>
+                    <figure class="galeria-fotos__figure">
+                        <a href="<?php echo $image['url']; ?>" data-lightbox="serie" data-title="<?php echo $image['description']; ?>">
+                        <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" class="img--rounded" />
+                        <figcaption class="galeria-fotos__caption"><?php echo $image['caption']; ?>xxx</figcaption></a>
+                        </figure>
+                <?php endforeach; ?>
+                
+            <?php endif; ?>
+
+        </div>
         
     </section>
 
 
     
+    <?php elseif(get_row_layout() == "post-carrousel"): // Posts Carousel ?>
+
+    <section>
+
+    <?php 
+    $loop = new WP_Query( array( 
+              'post_type' => 'cpt',
+              'category_name' => '' 
+              )); 
+    ?>
+    
+        <div class="jcarousel">
+    
+            <ul>
+
+                <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+                        
+                <li>
+                <? if ( has_post_thumbnail() ) { ?>
+                
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="jcarousel__producto">
+                    <?php the_post_thumbnail('medium'); ?>
+                    <!-- <img src="<?php //echo get_template_directory_uri(); ?>/assets/img/hexagono_productos.svg" alt="t0theme" class="logo-img"> -->
+                    <h2 class="h1"><? the_title(); ?></h2>
+                    </a>
+
+                <?}else {?>
+                
+                <?}?>
+                </li>
+                
+              <?php endwhile; ?>
+              <?php wp_reset_postdata(); ?>
+
+            </ul>
+
+
+            <!-- Prev/next controls -->
+            <a href="#" class="jcarousel-control-prev btn btn--primary">
+            <span class="icon-arrow-left"></span>
+            </a>
+            
+            <a href="#" class="jcarousel-control-next btn btn--primary">
+            <span class="icon-arrow-right"></span>
+            </a>
+
+        </div>
+        
+    </section>
+
+    
+
     <?php elseif(get_row_layout() == "list-group-ul"): // Grupo Listas Desordenadas ?>
                 
-    <h2>Belleza + Técnica</h2>
+    <h2>Best Tools & Metodologies</h2>
     <section class="list-group">
 
     <?php

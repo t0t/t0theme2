@@ -156,15 +156,17 @@ td, th { padding: 0; }
 /** Escala de grises */
 /*------------------------------------*\ $PLACEHOLDERS
 \*------------------------------------*/
-.info-adicional { padding: 0; }
+.info-adicional, .jcarousel ul { padding: 0; }
 
-.aligncenter, hr, figure figcaption, h1 small, h2 small, h3 small { display: block; }
+.jcarousel ul { margin: 0; }
+
+.aligncenter, hr, figure figcaption, h1 small, h2 small, h3 small, .jcarousel .jcarousel__producto { display: block; }
 
 .nav-header { display: table; }
 
 img, .nav-header { width: 100%; }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .nav-header__item, .idiomas, .alert--info, .well, .well--large { text-align: center; }
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .nav-header__item, .idiomas, .alert--info, .well, .well--large, .jcarousel h2 { text-align: center; }
 
 .main-footer { display: inline-block; }
 
@@ -861,7 +863,11 @@ input:required:focus:valid { background-color: #4dff4d; border: 1px solid green;
 
 .list-group--horizontal { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
 
-.galeria-fotos { display: -moz-flex; /* OLD - Firefox 19 */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ /* OLD - iOS 6-, Safari 3.1-6 */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: justify; -webkit-justify-content: space-between; -moz-justify-content: space-between; justify-content: space-between; }
+.galeria-fotos { display: -moz-flex; /* OLD - Firefox 19 */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ /* OLD - iOS 6-, Safari 3.1-6 */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: justify; -webkit-justify-content: space-between; -moz-justify-content: space-between; justify-content: space-between; background-color: #e5e1d6; padding: 3%; }
+
+.galeria-fotos__title { -webkit-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; margin-bottom: 1.5%; }
+
+.galeria-fotos__description { color: #93845c; -webkit-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; }
 
 .galeria-fotos__figure { position: relative; width: 50%; text-align: center; }
 @media (min-width: 600px) { .galeria-fotos__figure { width: calc(20% - 3%); } }
@@ -907,5 +913,21 @@ a.brand__logo { width: 40px; height: 40px; background-size: contain; background-
 .shape-square { width: 100px; min-height: 100px; }
 
 .shape-custom { width: 100px; min-height: 50px; }
+
+.jcarousel { position: relative; overflow: hidden; width: 100%; }
+.jcarousel ul { width: 20000em; position: relative; }
+.jcarousel li { font-size: 16px; font-size: 0.6956521739rem; float: left; width: 50em; position: relative; }
+.jcarousel .jcarousel__producto { height: 20em; background-size: 40%; background-image: url(assets/img/hexagono_productos.svg); background-repeat: no-repeat; background-position: center; -webkit-transition: all 0.1s; transition: all 0.1s; }
+.no-svg .jcarousel .jcarousel__producto { background-image: url(assets/img/hexagono_productos.png); }
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { .no-svg .jcarousel .jcarousel__producto { background-image: url(assets/img/hexagono_productos@2x.png); } }
+.jcarousel .jcarousel__producto:hover { background-size: 35%; -webkit-transform: translate(5, 5); -ms-transform: translate(5, 5); transform: translate(5, 5); -webkit-transition: all 0.3s; transition: all 0.3s; }
+.jcarousel h2 { font-size: 2.5em; padding-top: 3em; width: 100%; color: black; }
+.jcarousel img { display: block; max-width: 100%; height: auto !important; }
+.jcarousel .jcarousel-control-prev, .jcarousel .jcarousel-control-next { position: absolute; top: 40%; }
+@media screen and (min-width: 600px) { .jcarousel .jcarousel-control-prev, .jcarousel .jcarousel-control-next { top: 76%; } }
+.jcarousel .jcarousel-control-prev { left: 3%; }
+@media screen and (min-width: 600px) { .jcarousel .jcarousel-control-prev { left: 44%; } }
+.jcarousel .jcarousel-control-next { right: 3%; }
+@media screen and (min-width: 600px) { .jcarousel .jcarousel-control-next { right: 44%; } }
 
 /*# sourceMappingURL=style.css.map */

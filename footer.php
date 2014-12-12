@@ -24,18 +24,18 @@
       </div>
     
       <div class="box--2">
-        <a href="mailto:sergiofores@gmail.com" class="box--1 btn btn--primary">
-        Send me an em@il</a>  
+        <a href="mailto:sergiofores@gmail.com" class="box--1 btn btn--primary">Send me an em@il</a>  
       </div>
 
       </div>
-
 
        <div>
        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa distinctio pariatur consequuntur inventore commodi consequatur minima unde assumenda impedit, tenetur eligendi, consectetur vero voluptatem! Expedita eligendi atque suscipit, beatae quidem.</p>
        </div>	
+       
     </footer>
     <?php edit_post_link(); ?>
     <?php wp_footer(); ?>
+
 </body>
 </html>
