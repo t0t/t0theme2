@@ -30,14 +30,14 @@
 
 	<div class="brand">
 
-		<a href="/" class="brand__logo">
-		<h1 class="h4 brand__description">
-		<?php bloginfo('name'); ?>
-		<?php bloginfo('description'); ?>
-		</h1></a>
+		<a href="/" class="brand__logo"></a>
+		<h1 class="h4 brand__name">
+			<?php bloginfo('name'); ?>
+			<span class="brand__description">
+				<?php bloginfo('description'); ?>
+			</span>
+		</h1>
 	
 	</div>
 	
-	<div class="banner"></div>
-
 </header>
