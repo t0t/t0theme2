@@ -49,6 +49,7 @@
     
     <?php elseif(get_row_layout() == "list-group-ul"): // Grupo Listas Desordenadas ?>
                 
+    <h2>Belleza + Técnica</h2>
     <section class="list-group">
 
     <?php

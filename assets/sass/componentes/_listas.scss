@@ -3,9 +3,10 @@
 	flex: 1;
 	text-align: center;
 }
-	.list__item {}
+	.list__item { color: $color-base; }
 	.list__item::before {
 		content: "\2714";
+		color: $color-base;
 	}
 
 
