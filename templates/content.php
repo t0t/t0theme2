@@ -2,6 +2,11 @@
     
     <section class="main__content__section">
         
+        <!-- Flexible content -->
+        <article>
+        <?php get_template_part('templates/custom', 'fields'); ?>
+        </article>
+
         <!-- post -->
         <article class="main__article article-post">
                 
@@ -13,11 +18,6 @@
 
             <footer><?php the_tags(); ?></footer>
             
-        </article>
-
-        <!-- Flexible content -->
-        <article>
-        <?php get_template_part('templates/custom', 'fields'); ?>
         </article>
 
     </section>

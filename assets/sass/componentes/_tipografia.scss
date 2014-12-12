@@ -21,8 +21,9 @@ h6 {
 	text-rendering 	: optimizelegibility;
 		
 		&.altheader {
-			// color:$color-base-dark;
-			//font-weight: 600;
+			color:$white;
+			font-size: 8vw;
+			font-weight: 700;
 			// text-transform: uppercase;
 		}
 }

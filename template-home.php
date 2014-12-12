@@ -7,9 +7,9 @@ Template Name: Portada
 
 <main role="main">
 
- 	<?php get_template_part('templates/nav', 'main' ); ?>
-
     <?php get_template_part('templates/content'); ?>
+    
+ 	<?php get_template_part('templates/nav', 'main' ); ?>
 
 </main>
 
