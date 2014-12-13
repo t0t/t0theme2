@@ -58,7 +58,62 @@
     
     <?php elseif(get_row_layout() == "post-carrousel"): // Posts Carousel ?>
 
-    <p>temporal</p>
+     <section class="carousel">
+
+        <h2 class="carousel__title">
+            <?php the_sub_field("title"); ?>
+        </h2>
+        <h3 class="carousel__description">
+            <?php the_sub_field("description"); ?>
+        </h3>
+
+        <?php 
+        $loop = new WP_Query( array( 
+            'post_type' => 'cpt',
+            'category_name' => '' 
+            )); 
+        ?>
+        
+        <div class="carousel__wrap">
+
+            <ul class="carousel__list">
+            
+            <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+                                    
+                <li>
+
+                    <? if ( has_post_thumbnail() ) { ?>
+
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="carousel__item">
+                        <figure>
+                            <?php the_post_thumbnail('medium'); ?>
+                            <figcaption><?php the_title(); ?></figcaption>
+                        </figure>
+                    </a>
+            
+                    <?}else {?>
+                        <p>no hay foto</p>
+                    <?}?>
+
+                </li>
+                            
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+            
+            </ul>
+
+        </div>
+
+            <!-- Prev/next controls -->
+            <a href="#" class="carousel-control-prev btn btn--primary">
+            <span class="icon-arrow-left"></span>
+            </a>
+            
+            <a href="#" class="carousel-control-next btn btn--primary">
+            <span class="icon-arrow-right"></span>
+            </a>
+        
+    </section>
 
     
 
@@ -125,63 +180,3 @@
     <?php endwhile; ?>
 
  <?php endif; ?>
-
-
-
-
- <section class="carousel">
-
-        <h2 class="carousel__title">
-            <?php the_sub_field("title"); ?>
-        </h2>
-        <h3 class="carousel__description">
-            <?php the_sub_field("description"); ?>
-        </h3>
-
-        <?php 
-        $loop = new WP_Query( array( 
-            'post_type' => 'post',
-            'category_name' => '' 
-            )); 
-        ?>
-        
-        <div class="carousel__wrap">
-
-            <ul class="carousel__list">
-            
-            <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-                                    
-                <li>
-
-                    <? if ( has_post_thumbnail() ) { ?>
-
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="carousel__item">
-                        <figure>
-                            <?php the_post_thumbnail('medium'); ?>
-                            <figcaption><?php the_title(); ?></figcaption>
-                        </figure>
-                    </a>
-            
-                    <?}else {?>
-                        <p>no hay foto</p>
-                    <?}?>
-
-                </li>
-                            
-            <?php endwhile; ?>
-            <?php wp_reset_postdata(); ?>
-            
-            </ul>
-
-        </div>
-
-            <!-- Prev/next controls -->
-            <a href="#" class="carousel-control-prev btn btn--primary">
-            <span class="icon-arrow-left"></span>
-            </a>
-            
-            <a href="#" class="carousel-control-next btn btn--primary">
-            <span class="icon-arrow-right"></span>
-            </a>
-        
-    </section>

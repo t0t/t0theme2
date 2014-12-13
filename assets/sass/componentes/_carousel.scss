@@ -1,5 +1,10 @@
 // Carousel
 .carousel {
+	@include flexbox;
+	@include flex-wrap(wrap);
+	flex-direction: row;
+    @include justify-content(space-between);
+	padding: $gutterwidth;
 	background-color: lighten($color-base, 40%);
 }
 	.carousel__item {
@@ -10,11 +15,13 @@
 	}
 	
 	.carousel__title {
-
+		margin-bottom: 0;
+		@extend %flex-basis-fullwidth;
 	}
 
 	.carousel__description {
-
+		color: $color-base;
+		@extend %flex-basis-fullwidth;
 	}
 
 	.carousel__wrap {
@@ -22,18 +29,17 @@
 		overflow: hidden;
 		width: 100%;
 
-		> ul {
+		ul {
 			width: 20000em;
 	    	position: relative;
 	    	@extend %no-padding;
 	    	@extend %no-margin;
-	    	background-color: red;
 		}
 
 		li {
 			position: relative;
-			float: left;
-			width: 300px;
+			display: table-cell;
+			width: 500px;
 		}
 
 		img {

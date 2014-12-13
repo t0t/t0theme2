@@ -4,7 +4,32 @@
 
 (function($) {
     $(function() {
-        $('.carousel__wrap').jcarousel();
+
+
+
+    $('.carousel__wrap')
+        .on('jcarousel:create jcarousel:reload', function() {
+            var element = $(this),
+                width = element.innerWidth();
+
+            if (width > 900) {
+                width = width / 3;
+            } else if (width > 600) {
+                width = width / 2;
+            } else if (width < 430) {
+                width = width;
+            }
+
+            element.jcarousel('items').css('width', width + 'px');
+        })
+        .jcarousel({
+            // Your configurations options
+        });
+
+        
+        $('.carousel__wrap').jcarouselAutoscroll({
+            target: '+=3'
+        });
 
         $('.carousel-control-prev')
             .on('jcarouselcontrol:active', function() {
@@ -36,5 +61,10 @@
                 $(this).removeClass('active');
             })
             .jcarouselPagination();
+
+
+
+
+
     });
 })(jQuery);
