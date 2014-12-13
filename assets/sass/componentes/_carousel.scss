@@ -1,57 +1,66 @@
-// slider
+// Carousel
 .carousel {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-
-	ul {
-		width: 20000em;
-    	position: relative;
-    	@extend %no-padding;
-    	@extend %no-margin;
-    	background-color: red;
-	}
-
-	li {
-		position: relative;
-		float: left;
-		width: 300px;
-	}
-
-	img {
-		display: block;
-		max-width: 100%;
-		height: auto !important;
-	}
-
-	.carousel__producto {
-		height: 20em;
+	background-color: lighten($color-base, 40%);
+}
+	.carousel__item {
 		@extend %display-block;
+
 		&:hover {
-			background-size: 35%;
-			@include translate(5,5);
 		}
 	}
 	
-	.carousel-control-prev, .carousel-control-next {
-		position: absolute;
-		top: 40%;
-		@media screen and (min-width: $bp3) {
-			top: 76%;
-		}
+	.carousel__title {
+
 	}
 
-	.carousel-control-prev {
-		left: $gutterwidth;
-		@media screen and (min-width: $bp3) {
-			left: 44%;
-		}
+	.carousel__description {
+
 	}
 
-	.carousel-control-next {
-		right: $gutterwidth;
-		@media screen and (min-width: $bp3) {
-			right: 44%;
+	.carousel__wrap {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+
+		> ul {
+			width: 20000em;
+	    	position: relative;
+	    	@extend %no-padding;
+	    	@extend %no-margin;
+	    	background-color: red;
+		}
+
+		li {
+			position: relative;
+			float: left;
+			width: 300px;
+		}
+
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto !important;
+		}
+	
+		.carousel-control-prev, .carousel-control-next {
+			position: absolute;
+			top: 40%;
+			@media screen and (min-width: $bp3) {
+				top: 76%;
+			}
+		}
+
+		.carousel-control-prev {
+			left: $gutterwidth;
+			@media screen and (min-width: $bp3) {
+				left: 44%;
+			}
+		}
+
+		.carousel-control-next {
+			right: $gutterwidth;
+			@media screen and (min-width: $bp3) {
+				right: 44%;
+			}
 		}
 	}
-}

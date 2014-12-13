@@ -4,7 +4,7 @@
 
 (function($) {
     $(function() {
-        $('.carousel').jcarousel();
+        $('.carousel__wrap').jcarousel();
 
         $('.carousel-control-prev')
             .on('jcarouselcontrol:active', function() {

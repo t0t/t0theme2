@@ -156,11 +156,11 @@ td, th { padding: 0; }
 /** Escala de grises */
 /*------------------------------------*\ $PLACEHOLDERS
 \*------------------------------------*/
-.info-adicional, .carousel ul { padding: 0; }
+.info-adicional, .carousel__wrap > ul { padding: 0; }
 
-.carousel ul { margin: 0; }
+.carousel__wrap > ul { margin: 0; }
 
-.aligncenter, hr, figure figcaption, h1 small, h2 small, h3 small, .carousel .carousel__producto { display: block; }
+.aligncenter, hr, figure figcaption, h1 small, h2 small, h3 small, .carousel__item { display: block; }
 
 .nav-header { display: table; }
 
@@ -916,17 +916,17 @@ a.brand__logo { width: 40px; height: 40px; background-size: contain; background-
 
 .shape-custom { width: 100px; min-height: 50px; }
 
-.carousel { position: relative; overflow: hidden; width: 100%; }
-.carousel ul { width: 20000em; position: relative; background-color: red; }
-.carousel li { position: relative; float: left; width: 300px; }
-.carousel img { display: block; max-width: 100%; height: auto !important; }
-.carousel .carousel__producto { height: 20em; }
-.carousel .carousel__producto:hover { background-size: 35%; -webkit-transform: translate(5, 5); -ms-transform: translate(5, 5); transform: translate(5, 5); }
-.carousel .carousel-control-prev, .carousel .carousel-control-next { position: absolute; top: 40%; }
-@media screen and (min-width: 600px) { .carousel .carousel-control-prev, .carousel .carousel-control-next { top: 76%; } }
-.carousel .carousel-control-prev { left: 3%; }
-@media screen and (min-width: 600px) { .carousel .carousel-control-prev { left: 44%; } }
-.carousel .carousel-control-next { right: 3%; }
-@media screen and (min-width: 600px) { .carousel .carousel-control-next { right: 44%; } }
+.carousel { background-color: #e5e1d6; }
+
+.carousel__wrap { position: relative; overflow: hidden; width: 100%; }
+.carousel__wrap > ul { width: 20000em; position: relative; background-color: red; }
+.carousel__wrap li { position: relative; float: left; width: 300px; }
+.carousel__wrap img { display: block; max-width: 100%; height: auto !important; }
+.carousel__wrap .carousel-control-prev, .carousel__wrap .carousel-control-next { position: absolute; top: 40%; }
+@media screen and (min-width: 600px) { .carousel__wrap .carousel-control-prev, .carousel__wrap .carousel-control-next { top: 76%; } }
+.carousel__wrap .carousel-control-prev { left: 3%; }
+@media screen and (min-width: 600px) { .carousel__wrap .carousel-control-prev { left: 44%; } }
+.carousel__wrap .carousel-control-next { right: 3%; }
+@media screen and (min-width: 600px) { .carousel__wrap .carousel-control-next { right: 44%; } }
 
 /*# sourceMappingURL=style.css.map */
