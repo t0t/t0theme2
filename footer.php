@@ -4,7 +4,7 @@
         <h2 class="main-footer__header">Contacto</h2>
         <ul class="main-footer__list">
           <li class="icon-github">
-            <a href="https://github.com/t0t/t0theme/" target="_blank">My repositories on Github</a>
+            <a href="https://github.com/t0t/t0theme2/" target="_blank">My repositories on Github</a>
           </li>
           <li class="icon-twitter">
             <a href="https://twitter.com/t0tinspire" target="_blank">I'm @t0tinspire on Twitter</a>
@@ -17,10 +17,19 @@
           </li>
         </ul>
     
-        <a href="mailto:sergiofores@gmail.com" class="main-footer__btn btn btn--primary">Just say Hello!</a>  
+        <div class="main-footer__credits">
+          <a href="mailto:sergiofores@gmail.com" class="main-footer__btn btn btn--primary">Just say Hello!</a>
+        <aside class="creditos" rel="author"> 
+            <small>
+              <a href="http://sergiofores.net" target="_blank"><i class="icon-logo-mazizo"></i> </a> &sdot; <?php bloginfo('name'); ?>
+              <?php echo date('Y'); ?>
+            </small>
+          <?php edit_post_link('&oplus; Editar ') ?>&sdot;
+          <?php wp_loginout(); ?>
+          </aside>
+        </div> 
        
     </footer>
-    <?php edit_post_link(); ?>
     <?php wp_footer(); ?>
 
 </body>

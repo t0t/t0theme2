@@ -36,6 +36,12 @@
 		}
 	}
 	.main-footer__btn { 
-		flex: 1;
+		
+	}
+	.main-footer__credits {
+		flex: 2;
+		aside {
+			margin-top: $gutterwidth;
+		}
 	}
 
