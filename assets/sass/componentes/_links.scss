@@ -34,7 +34,7 @@ a {
 	}
 }
 
-a[target="_blank"]::after {
-  content: " \2714";
-  color: $color-base-dark;
-}
+// a[target="_blank"]::after {
+//   content: " \2714";
+//   color: $color-base-dark;
+// }

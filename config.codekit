@@ -1992,6 +1992,72 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/fonts\/t0ticons\/familia-iconos.sketch\/QuickLook\/Preview.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66552,
+		"inputAbbreviatedPath": "\/assets\/fonts\/t0ticons\/familia-iconos.sketch\/QuickLook\/Preview.png",
+		"outputAbbreviatedPath": "\/assets\/fonts\/t0ticons\/familia-iconos.sketch\/QuickLook\/Preview.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/fonts\/t0ticons\/familia-iconos.sketch\/QuickLook\/Thumbnail.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44819,
+		"inputAbbreviatedPath": "\/assets\/fonts\/t0ticons\/familia-iconos.sketch\/QuickLook\/Thumbnail.png",
+		"outputAbbreviatedPath": "\/assets\/fonts\/t0ticons\/familia-iconos.sketch\/QuickLook\/Thumbnail.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/fonts\/t0ticons\/logo-t0theme.sketch\/QuickLook\/Preview.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 763,
+		"inputAbbreviatedPath": "\/assets\/fonts\/t0ticons\/logo-t0theme.sketch\/QuickLook\/Preview.png",
+		"outputAbbreviatedPath": "\/assets\/fonts\/t0ticons\/logo-t0theme.sketch\/QuickLook\/Preview.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/fonts\/t0ticons\/logo-t0theme.sketch\/QuickLook\/Thumbnail.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37150,
+		"inputAbbreviatedPath": "\/assets\/fonts\/t0ticons\/logo-t0theme.sketch\/QuickLook\/Thumbnail.png",
+		"outputAbbreviatedPath": "\/assets\/fonts\/t0ticons\/logo-t0theme.sketch\/QuickLook\/Thumbnail.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/fonts\/t0ticons\/logo.sketch\/QuickLook\/Preview.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 892,
+		"inputAbbreviatedPath": "\/assets\/fonts\/t0ticons\/logo.sketch\/QuickLook\/Preview.png",
+		"outputAbbreviatedPath": "\/assets\/fonts\/t0ticons\/logo.sketch\/QuickLook\/Preview.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/fonts\/t0ticons\/logo.sketch\/QuickLook\/Thumbnail.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7998,
+		"inputAbbreviatedPath": "\/assets\/fonts\/t0ticons\/logo.sketch\/QuickLook\/Thumbnail.png",
+		"outputAbbreviatedPath": "\/assets\/fonts\/t0ticons\/logo.sketch\/QuickLook\/Thumbnail.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/graficos.sketch\/QuickLook\/Preview.png": {
 		"fileType": 32768,
 		"ignore": 0,

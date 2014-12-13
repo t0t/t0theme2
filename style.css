@@ -156,7 +156,7 @@ td, th { padding: 0; }
 /** Escala de grises */
 /*------------------------------------*\ $PLACEHOLDERS
 \*------------------------------------*/
-.info-adicional, .carousel__wrap ul { padding: 0; }
+.carousel__wrap ul { padding: 0; }
 
 .carousel__wrap ul { margin: 0; }
 
@@ -167,8 +167,6 @@ td, th { padding: 0; }
 img, .nav-header { width: 100%; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .nav-header__item, .idiomas, .alert--info, .well, .well--large, .galeria-fotos__figure, .galeria-fotos__figure .galeria-fotos__caption::after { text-align: center; }
-
-.main-footer { display: inline-block; }
 
 .list-inline > li { display: inline-block; padding-right: 3%; }
 
@@ -208,19 +206,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .nav-header__item, .idioma
 \*------------------------------------*/
 .wrapper > div:nth-of-type(1n), .wrapper > div:nth-of-type(3n), .main > div:nth-of-type(1n), .main > div:nth-of-type(3n) { width: calc(100% * 0.1666666667 - 6px * (1 - 0.1666666667)); }
 
-.footer > div:nth-of-type(1n), .footer > div:nth-of-type(2n), .footer > div:nth-of-type(3n), .main > div:nth-of-type(2n), .main > div:nth-of-type(4n) { width: calc(100% * 0.3333333333 - 6px * (1 - 0.3333333333)); }
+.main > div:nth-of-type(2n), .main > div:nth-of-type(4n) { width: calc(100% * 0.3333333333 - 6px * (1 - 0.3333333333)); }
 
 .col-6-6 > div:nth-of-type(1n), .col-6-6 > div:nth-of-type(2n) { width: calc(100% * 0.5 - 6px * (1 - 0.5)); }
 
 .wrapper > div:nth-of-type(2n) { width: calc(100% * 0.6666666667 - 6px * (1 - 0.6666666667)); }
 
-.footer, .wrapper, .main, .col-6-6 { overflow: hidden; }
+.wrapper, .main, .col-6-6 { overflow: hidden; }
 
-.footer > div, .wrapper > div, .main > div, .col-6-6 > div { float: left; margin-right: 6px; }
+.wrapper > div, .main > div, .col-6-6 > div { float: left; margin-right: 6px; }
 
-.footer > div:nth-of-type(3n), .wrapper > div:nth-of-type(3n), .main > div:nth-of-type(4n), .col-6-6 > div:nth-of-type(2n) { margin-right: 0; }
+.wrapper > div:nth-of-type(3n), .main > div:nth-of-type(4n), .col-6-6 > div:nth-of-type(2n) { margin-right: 0; }
 
-@media (max-width: 48em) { .footer > div, .wrapper > div, .main > div, .col-6-6 > div { width: 100% !important; float: none; margin-right: 0; } }
+@media (max-width: 48em) { .wrapper > div, .main > div, .col-6-6 > div { width: 100% !important; float: none; margin-right: 0; } }
 #offset { position: fixed; top: 0; left: 0; right: 0; text-align: center; width: 100%; background-color: rgba(0, 0, 0, 0.5); color: #fff; padding: 0 10px; z-index: 9999; }
 
 /*------------------------------------*\ $RESET
@@ -241,14 +239,17 @@ article, aside, figure, footer, header, hgroup, nav, section { display: block; }
 .sidebar figure > a { float: left; }
 .sidebar figure figcaption { float: right; width: 80%; }
 
-.main-footer { margin-left: auto; margin-right: auto; max-width: 1420px; width: 100%; }
+.main-footer { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-align-content: center; -ms-flex-line-pack: center; align-content: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-color: #00ffdb; padding: 3%; }
+@media (min-width: 950px) { .main-footer { -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; } }
+.main-footer li { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; line-height: 1; }
+.main-footer li::before { font-size: 3.5rem; margin-right: 10px; }
 
-.info-adicional { display: table; border-collapse: separate; border-spacing: 20px; margin-left: auto; margin-right: auto; max-width: 100%; width: 100%; }
-.info-adicional .info-adicional__item { vertical-align: middle; display: table-cell; width: 50%; height: 100px; }
-.info-adicional a { display: block; width: 100%; height: 100px; line-height: 1; }
-.info-adicional a i { font-size: 4em; vertical-align: middle; }
+.main-footer__header { -webkit-flex: 1; -ms-flex: 1; flex: 1; margin-bottom: 0; }
 
-.footer { background-color: rgba(0, 255, 219, 0.2); }
+.main-footer__list { -webkit-flex: 3; -ms-flex: 3; flex: 3; margin: 0; padding: 0; }
+.main-footer__list a, .main-footer__list a:visited { line-height: 2; color: black; }
+
+.main-footer__btn { -webkit-flex: 1; -ms-flex: 1; flex: 1; }
 
 html { font-size: 75%; }
 @media all and (min-width: 600px) { html { font-size: 100%; } }
@@ -329,7 +330,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; max-width: 100%; }
 /*------------------------------------*\ $FUENTES
 \*------------------------------------*/
 /*@include font-face("icomoon", font-files("../fonts/icomoon/icomoon.eot", "../fonts/icomoon/icomoon.eot?#iefix", "../fonts/icomoon/icomoon.woff", "../fonts/icomoon.ttf", "../fonts/icomoon/icomoon.svg#icomoon"));*/
-@font-face { font-family: 'icomoon'; src: url("../fonts/icomoon.eot?aa5xud"); src: url("../fonts/icomoon.eot?#iefixaa5xud") format("embedded-opentype"), url("../fonts/icomoon.woff?aa5xud") format("woff"), url("../fonts/icomoon.ttf?aa5xud") format("truetype"), url("../fonts/icomoon.svg?aa5xud#icomoon") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'icomoon'; src: url("assets/fonts/icomoon.eot?aa5xud"); src: url("assets/fonts/icomoon.eot?#iefixaa5xud") format("embedded-opentype"), url("assets/fonts/icomoon.woff?aa5xud") format("woff"), url("assets/fonts/icomoon.ttf?aa5xud") format("truetype"), url("assets/fonts/icomoon.svg?aa5xud#icomoon") format("svg"); font-weight: normal; font-style: normal; }
 /* Use the following CSS code if you want to have a class per icon */
 /*
 Instead of a list of all class selectors,
@@ -536,8 +537,6 @@ a:hover, a:active { outline: 0; }
 .main p a { border-bottom: solid 3px #93845c; }
 .main p a:hover { text-decoration: none; border-bottom: solid 3px white; }
 
-a[target="_blank"]::after { content: " \2714"; color: #837652; }
-
 /*------------------------------------*\ $BOTONES
 \*------------------------------------*/
 /* Definimos los botones y sus variantes */
@@ -716,7 +715,7 @@ Main navbar
 .nav-main { font-size: 20px; }
 .nav-main a { padding: 3%; color: white; text-transform: uppercase; display: block; }
 .nav-main a:hover { background-color: pink; }
-.nav-main label::after { position: fixed; top: 4.65%; right: 3%; width: 1.5em; height: 1.5em; display: block; content: "☰"; z-index: 25; line-height: 1.6; text-align: center; background-color: #00ffdb; border-radius: 100%; }
+.nav-main label::after { position: fixed; top: 3%; right: 3%; width: 1.5em; height: 1.5em; display: block; content: "☰"; z-index: 25; line-height: 1.6; text-align: center; background-color: #00ffdb; border-radius: 100%; }
 @media (min-width: 600px) { .nav-main label:hover:after { background-color: #00ffdb; } }
 .nav-main > ul { position: fixed; top: 0; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; height: 100vh; width: 100%; margin: 0; padding: 0; background-color: rgba(0, 0, 0, 0.85); text-align: center; display: none; }
 .nav-main > ul > li { border-bottom: dashed 2px #93845c; }
@@ -916,9 +915,9 @@ a.brand__logo { width: 40px; height: 40px; background-size: contain; background-
 
 .shape-custom { width: 100px; min-height: 50px; }
 
-.carousel { display: -moz-flex; /* OLD - Firefox 19 */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ /* OLD - iOS 6-, Safari 3.1-6 */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; -webkit-justify-content: space-between; -moz-justify-content: space-between; justify-content: space-between; padding: 3%; background-color: #e5e1d6; }
+.carousel { display: -moz-flex; /* OLD - Firefox 19 */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ /* OLD - iOS 6-, Safari 3.1-6 */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding: 3%; background-color: #e5e1d6; }
 
-.carousel__title { margin-bottom: 0; }
+.carousel__title { margin-bottom: 1.5%; }
 
 .carousel__description { color: #93845c; }
 

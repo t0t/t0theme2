@@ -9,7 +9,7 @@ Template Name: Portada
 
     <?php get_template_part('templates/custom', 'fields'); ?>
     
- 	<?php get_template_part('templates/nav', 'main' ); ?>
+ 	<?php //get_template_part('templates/nav', 'main' ); ?>
 
 </main>
 

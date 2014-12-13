@@ -12,11 +12,9 @@
             var element = $(this),
                 width = element.innerWidth();
 
-            if (width > 900) {
-                width = width / 3;
-            } else if (width > 600) {
+            if (width > 700) {
                 width = width / 2;
-            } else if (width < 430) {
+            } else if (width < 700) {
                 width = width;
             }
 

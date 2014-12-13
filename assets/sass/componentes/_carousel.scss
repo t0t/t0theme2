@@ -3,7 +3,8 @@
 	@include flexbox;
 	@include flex-wrap(wrap);
 	flex-direction: row;
-    @include justify-content(space-between);
+    @include justify-content(center);
+    align-items: center;
 	padding: $gutterwidth;
 	background-color: lighten($color-base, 40%);
 }
@@ -15,7 +16,7 @@
 	}
 	
 	.carousel__title {
-		margin-bottom: 0;
+		margin-bottom: $gutterwidth/2;
 		@extend %flex-basis-fullwidth;
 	}
 

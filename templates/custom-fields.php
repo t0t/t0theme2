@@ -84,12 +84,10 @@
 
                     <? if ( has_post_thumbnail() ) { ?>
 
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="carousel__item">
-                        <figure>
-                            <?php the_post_thumbnail('medium'); ?>
+                        <figure class="carousel__item">
+                            <?php the_post_thumbnail(); ?>
                             <figcaption><?php the_title(); ?></figcaption>
                         </figure>
-                    </a>
             
                     <?}else {?>
                         <p>no hay foto</p>
@@ -105,12 +103,12 @@
         </div>
 
             <!-- Prev/next controls -->
-            <a href="#" class="carousel-control-prev btn btn--primary">
-            <span class="icon-arrow-left"></span>
+            <a href="#" class="carousel-control-prev btn">
+            <span>&larr;</span>
             </a>
             
-            <a href="#" class="carousel-control-next btn btn--primary">
-            <span class="icon-arrow-right"></span>
+            <a href="#" class="carousel-control-next btn">
+            <span>&rarr;</span>
             </a>
         
     </section>
@@ -120,6 +118,7 @@
     <?php elseif(get_row_layout() == "list-group-ul"): // Grupo Listas Desordenadas ?>
                 
     <h2>Best Tools + Metodologies</h2>
+    
     <section class="list-group">
 
     <?php
