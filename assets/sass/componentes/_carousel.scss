@@ -1,73 +1,49 @@
-// Carousel
-.carousel {
-	@include flexbox;
-	@include flex-wrap(wrap);
-	flex-direction: row;
-    @include justify-content(center);
-    align-items: center;
-	padding: $gutterwidth;
-	background-color: lighten($color-base, 40%);
+.inactivo { opacity: .5 }
+.slider {
+  position: relative;
+  background-color: red;
+  
+  .slider__slide {
+    display: flex;
+    opacity: 0;
+    position:absolute;
+    overflow: hidden;
+    transition: all 1s ease;
+    
+    &.current {
+      opacity: 1;
+      transition: all 1s ease;
+    }
+  }
 }
-	.carousel__item {
-		@extend %display-block;
 
-		&:hover {
-		}
-	}
-	
-	.carousel__title {
-		margin-bottom: $gutterwidth/2;
-		@extend %flex-basis-fullwidth;
-	}
+.slider__figure {
+  position: relative;
+  
+  figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255,255,255,.3);
+  }
+}
 
-	.carousel__description {
-		color: $color-base;
-		@extend %flex-basis-fullwidth;
-	}
+.next, .prev {
+  position: relative;
+  top:25%;
+  text-align: center;
+  padding: 0 40px;
+  z-index: 10;
+  background-color: red;
+  &:hover {
+    cursor: pointer;  
+  }
+}
+.prev { left:0 }
+.next { right:0 }
 
-	.carousel__wrap {
-		position: relative;
-		overflow: hidden;
-		width: 100%;
-
-		ul {
-			width: 20000em;
-	    	position: relative;
-	    	@extend %no-padding;
-	    	@extend %no-margin;
-		}
-
-		li {
-			position: relative;
-			display: table-cell;
-			width: 500px;
-		}
-
-		img {
-			display: block;
-			max-width: 100%;
-			height: auto !important;
-		}
-	
-		.carousel-control-prev, .carousel-control-next {
-			position: absolute;
-			top: 40%;
-			@media screen and (min-width: $bp3) {
-				top: 76%;
-			}
-		}
-
-		.carousel-control-prev {
-			left: $gutterwidth;
-			@media screen and (min-width: $bp3) {
-				left: 44%;
-			}
-		}
-
-		.carousel-control-next {
-			right: $gutterwidth;
-			@media screen and (min-width: $bp3) {
-				right: 44%;
-			}
-		}
-	}
+img {
+  width: 300px;
+}

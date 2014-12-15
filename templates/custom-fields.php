@@ -57,68 +57,57 @@
 
     
     <?php elseif(get_row_layout() == "post-carrousel"): // Posts Carousel ?>
-
-     <section class="carousel">
-
-        <h2 class="carousel__title">
-            <?php the_sub_field("title"); ?>
-        </h2>
-        <h3 class="carousel__description">
-            <?php the_sub_field("description"); ?>
-        </h3>
-
-        <?php 
+    <?php 
         $loop = new WP_Query( array( 
             'post_type' => 'cpt',
             'category_name' => '' 
             )); 
-        ?>
-        
-        <div class="carousel__wrap">
+    ?>
 
-            <ul class="carousel__list">
+
+    <!-- Prev/next controls -->
+    <a href="#" class="prev btn">
+    <span>&larr;</span>
+    </a>
             
-            <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-                                    
-                <li>
+    <a href="#" class="next btn">
+    <span>&rarr;</span>
+    </a>
 
-                    <? if ( has_post_thumbnail() ) { ?>
+  <?php the_sub_field("title"); ?>
+  <?php the_sub_field("description"); ?>
 
-                        <figure class="carousel__item">
-                            <?php the_post_thumbnail(); ?>
-                            <figcaption><?php the_title(); ?></figcaption>
-                        </figure>
-            
-                    <?}else {?>
-                        <p>no hay foto</p>
-                    <?}?>
+    <div class="slider">
 
-                </li>
-                            
-            <?php endwhile; ?>
-            <?php wp_reset_postdata(); ?>
-            
-            </ul>
+    <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+      
+        <div class="slider__slide current">
+          
+        <? if ( has_post_thumbnail() ) { ?>
+            <figure class="slider__figure">
+                <?php the_post_thumbnail(); ?>
+                <figcaption><?php the_title(); ?></figcaption>
+            </figure>
+                
+            <?}else {?>
+            <p>no hay foto</p>
+            <?}?>
 
         </div>
-
-            <!-- Prev/next controls -->
-            <a href="#" class="carousel-control-prev btn">
-            <span>&larr;</span>
-            </a>
-            
-            <a href="#" class="carousel-control-next btn">
-            <span>&rarr;</span>
-            </a>
+      
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
         
-    </section>
+    </div>
+  
+
 
     
 
     <?php elseif(get_row_layout() == "list-group-ul"): // Grupo Listas Desordenadas ?>
                 
     <h2>Best Tools + Metodologies</h2>
-    
+
     <section class="list-group">
 
     <?php

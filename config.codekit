@@ -275,7 +275,7 @@
 		},
 	"\/assets\/bower_components\/jcarousel\/dist\/jquery.jcarousel-autoscroll.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/bower_components\/jcarousel\/dist\/jquery.jcarousel-autoscroll.js",
 		"outputAbbreviatedPath": "\/assets\/bower_components\/jcarousel\/dist\/min\/jquery.jcarousel-autoscroll-min.js",
@@ -396,7 +396,7 @@
 		},
 	"\/assets\/bower_components\/jcarousel\/dist\/jquery.jcarousel.min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/bower_components\/jcarousel\/dist\/jquery.jcarousel.min.js",
 		"outputAbbreviatedPath": "\/assets\/bower_components\/jcarousel\/dist\/min\/jquery.jcarousel.min-min.js",
@@ -3632,20 +3632,6 @@
 	],
 "lastSavedByUser": "t0t",
 "manualImportLinks": {
-	"\/assets\/js\/_main.js": [
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/bower_components\/jcarousel\/dist\/jquery.jcarousel.min.js",
-			"position": 0,
-			"type": 1
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/bower_components\/jcarousel\/dist\/jquery.jcarousel-autoscroll.js",
-			"position": 1,
-			"type": 1
-			}
-		]
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "assets",
