@@ -912,22 +912,23 @@ a.brand__logo { width: 40px; height: 40px; background-size: contain; background-
 
 .shape-custom { width: 100px; min-height: 50px; }
 
-.inactivo { opacity: 0.5; }
+.slider { padding: 3%; background-color: #e5e1d6; position: relative; height: 300px; }
+@media all and (min-width: 400px) { .slider { height: 350px; } }
+@media all and (min-width: 500px) { .slider { height: 400px; } }
+@media all and (min-width: 560px) { .slider { height: 500px; } }
+@media all and (min-width: 700px) { .slider { height: 600px; } }
+@media all and (min-width: 875px) { .slider { height: 700px; } }
 
-.slider { position: relative; background-color: red; }
-.slider .slider__slide { display: -webkit-flex; display: -ms-flexbox; display: flex; opacity: 0; position: absolute; overflow: hidden; -webkit-transition: all 1s ease; transition: all 1s ease; }
-.slider .slider__slide.current { opacity: 1; -webkit-transition: all 1s ease; transition: all 1s ease; }
+.slider__item { width: 80%; position: absolute; left: 10%; opacity: 0; overflow: hidden; -webkit-transition: all .5s ease; transition: all .5s ease; }
+.slider__item.current { opacity: 1; -webkit-transition: all .5s ease; transition: all .5s ease; }
 
 .slider__figure { position: relative; }
-.slider__figure figcaption { position: absolute; top: 0; left: 0; width: 100%; height: 100px; background-color: rgba(255, 255, 255, 0.3); }
+.slider__figure figcaption { position: absolute; bottom: 10px; left: 0; width: 100%; padding: 3%; background-color: rgba(255, 255, 255, 0.5); }
 
-.next, .prev { position: relative; top: 25%; text-align: center; padding: 0 40px; z-index: 10; background-color: red; }
-.next:hover, .prev:hover { cursor: pointer; }
-
-.prev { left: 0; }
+.next, .prev { position: absolute; top: 50%; }
 
 .next { right: 0; }
 
-img { width: 300px; }
+.prev { left: 0; }
 
 /*# sourceMappingURL=style.css.map */

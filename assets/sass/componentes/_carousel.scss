@@ -1,49 +1,62 @@
-.inactivo { opacity: .5 }
+
+//Slider
 .slider {
-  position: relative;
-  background-color: red;
-  
-  .slider__slide {
-    display: flex;
+	padding: $gutterwidth;
+	background-color: lighten($color-base, 40%);
+	position: relative;
+	height: 300px;
+	@media all and (min-width:400px) {
+		height: 350px;
+	}
+	@media all and (min-width:500px) {
+		height: 400px;
+	}
+	@media all and (min-width:560px) {
+		height: 500px;
+	}
+	@media all and (min-width:700px) {
+		height: 600px;
+	}
+	@media all and (min-width:875px) {
+		height: 700px;
+	}
+}
+
+  .slider__item {
+	width: 80%;
+	position: absolute;
+	left: 10%;
     opacity: 0;
-    position:absolute;
     overflow: hidden;
-    transition: all 1s ease;
+    transition: all .5s ease;
     
     &.current {
-      opacity: 1;
-      transition: all 1s ease;
+    	opacity: 1;
+    	transition: all .5s ease;
     }
   }
-}
 
 .slider__figure {
-  position: relative;
-  
+	position: relative;
   figcaption {
     position: absolute;
-    top: 0;
+    bottom: 10px;
     left: 0;
     width: 100%;
-    height: 100px;
-    background-color: rgba(255,255,255,.3);
+    padding: $gutterwidth;
+    background-color: $white-alpha;
   }
-}
 
+}
 .next, .prev {
-  position: relative;
-  top:25%;
-  text-align: center;
-  padding: 0 40px;
-  z-index: 10;
-  background-color: red;
-  &:hover {
-    cursor: pointer;  
-  }
+	position: absolute;
+	top: 50%;
 }
-.prev { left:0 }
-.next { right:0 }
+.next {
+	right: 0;
 
-img {
-  width: 300px;
+}
+.prev {
+	left: 0;
+
 }

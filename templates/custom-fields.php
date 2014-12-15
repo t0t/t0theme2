@@ -64,43 +64,41 @@
             )); 
     ?>
 
+<section class="slider">
 
-    <!-- Prev/next controls -->
-    <a href="#" class="prev btn">
-    <span>&larr;</span>
-    </a>
-            
-    <a href="#" class="next btn">
-    <span>&rarr;</span>
-    </a>
+  <h2><?php the_sub_field("title"); ?></h2>
+  <h3><?php the_sub_field("description"); ?></h3>
 
-  <?php the_sub_field("title"); ?>
-  <?php the_sub_field("description"); ?>
-
-    <div class="slider">
+    <ul>
 
     <?php while ($loop->have_posts()) : $loop->the_post(); ?>
       
-        <div class="slider__slide current">
+        <li class="slider__item">
           
         <? if ( has_post_thumbnail() ) { ?>
+
             <figure class="slider__figure">
                 <?php the_post_thumbnail(); ?>
-                <figcaption><?php the_title(); ?></figcaption>
+                <figcaption><h4><?php the_title(); ?></h4></figcaption>
             </figure>
                 
             <?}else {?>
-            <p>no hay foto</p>
-            <?}?>
-
-        </div>
-      
-        <?php endwhile; ?>
-        <?php wp_reset_postdata(); ?>
+            <p>oh! No hay foto...</p>
         
-    </div>
-  
+        <?}?>
 
+        </li>
+      
+    <?php endwhile; ?>
+    <?php wp_reset_postdata(); ?>
+        
+    </ul>
+    
+    <!-- Prev/next controls -->
+    <button class="prev btn">&larr;</button>
+    <button class="next btn">&rarr;</button>
+  
+</section>
 
     
 
