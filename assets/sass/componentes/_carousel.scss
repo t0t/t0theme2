@@ -1,6 +1,9 @@
 
 //Slider
 .slider {
+	* {
+		transition: all .5s ease;
+	}
 	padding: $gutterwidth;
 	background-color: lighten($color-base, 40%);
 	position: relative;
@@ -28,24 +31,33 @@
 	left: 10%;
     opacity: 0;
     overflow: hidden;
-    transition: all .5s ease;
     
     &.current {
     	opacity: 1;
-    	transition: all .5s ease;
+    	
     }
   }
 
 .slider__figure {
 	position: relative;
-  figcaption {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    width: 100%;
-    padding: $gutterwidth;
-    background-color: $white-alpha;
-  }
+
+	figcaption {
+    	padding: $gutterwidth;
+    	background-color: $white-alpha;
+    	opacity: 0.5;
+    	z-index: 100;
+		@media all and (min-width: 410px) {
+			width: 50%;
+	    	position: absolute;
+	    	top: $gutterwidth;
+	    	left: $gutterwidth;
+			opacity: 0;
+		}
+	}
+	&:hover figcaption {
+		opacity: 1;
+    }
+
 
 }
 .next, .prev {
