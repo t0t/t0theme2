@@ -67,7 +67,7 @@
 <section class="slider">
 
   <h2><?php the_sub_field("title"); ?></h2>
-  <h3><?php the_sub_field("description"); ?></h3>
+  <?php //the_sub_field("description"); ?>
 
     <ul>
 
@@ -79,7 +79,7 @@
 
             <figure class="slider__figure">
                 <?php the_post_thumbnail(); ?>
-                <figcaption><h4><?php the_title(); ?></h4></figcaption>
+                <figcaption class="slider__caption"><?php the_title(); ?></figcaption>
             </figure>
                 
             <?}else {?>

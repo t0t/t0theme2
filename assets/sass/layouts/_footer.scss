@@ -7,6 +7,7 @@
 	flex-direction: column;
 	background-color: $color-alt;
   	padding: $gutterwidth;
+
   	@media (min-width:950px) {
 		flex-direction: row;
   	}
@@ -16,25 +17,37 @@
 		align-items: center;
 		line-height: 1;
 	}
-  	li::before {
-  		font-size: 3.5rem;
-  		margin-right: 10px;
-  	}
 }
 	.main-footer__header { 
 		flex: 1;
 		margin-bottom: 0;
 	}
+
 	.main-footer__list { 
-		flex: 3;
+		display: table;
+		width: 50%;
 		margin: 0;
 		padding: 0;
 
-		a, a:visited {
-			line-height: 2;
-			color: $textcolor;
+		li {
+			display: table-cell;
+
+			a {
+			transition: all .5s ease;
+			color: darken($color-alt, 10%);
+
+				&:hover {
+					color: darken($color-alt, 25%);
+				}
+
+		  		&::before {
+		  			font-size: 3.5rem;
+		  			margin-right: 10px;
+		  		}
+			}
 		}
 	}
+
 	.main-footer__btn { 
 		
 	}
@@ -44,4 +57,3 @@
 			margin-top: $gutterwidth;
 		}
 	}
-

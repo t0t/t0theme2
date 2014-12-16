@@ -13,7 +13,7 @@ body {
 
 
 img {
-  @include max-width($bp1);
+  @include max-width();
   @extend %full-width;
   height: auto;
 }

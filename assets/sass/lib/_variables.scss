@@ -73,7 +73,7 @@ $color-base-darken	: darken($color-base, 10%);
  * Escala de grises
  */
 $black 				: rgb(0,0,0);
-$black-alpha 		: rgba(0,0,0,0.85);
+$black-alpha 		: rgba(0,0,0,.6);
 $white				: rgb(255,255,255);
 $white-alpha 		: rgba(255,255,255,0.5);
 $lightgrey			: lighten($black, 30%);
