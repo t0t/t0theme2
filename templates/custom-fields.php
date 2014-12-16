@@ -66,7 +66,7 @@
 
 <section class="slider">
 
-  <h2><?php the_sub_field("title"); ?></h2>
+  <?php //the_sub_field("title"); ?>
   <?php //the_sub_field("description"); ?>
 
     <ul>
@@ -95,8 +95,8 @@
     </ul>
     
     <!-- Prev/next controls -->
-    <button class="prev btn">&larr;</button>
-    <button class="next btn">&rarr;</button>
+    <button class="slider__item__prev">&larr;</button>
+    <button class="slider__item__next">&rarr;</button>
   
 </section>
 

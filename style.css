@@ -914,13 +914,13 @@ a.brand__logo { width: 40px; height: 40px; background-size: contain; background-
 
 .shape-custom { width: 100px; min-height: 50px; }
 
-.slider { z-index: 1; padding-top: 3%; background-color: #e5e1d6; position: relative; height: 300px; }
+.slider { z-index: 1; background-color: #e5e1d6; position: relative; height: 300px; }
 .slider ul { margin: 0; padding: 0; }
 .slider * { -webkit-transition: all .5s ease; transition: all .5s ease; }
 @media all and (min-width: 400px) { .slider { height: 350px; } }
 @media all and (min-width: 500px) { .slider { height: 400px; } }
 @media all and (min-width: 560px) { .slider { height: 500px; } }
-@media all and (min-width: 700px) { .slider { height: 600px; padding: 3%; } }
+@media all and (min-width: 700px) { .slider { height: 600px; } }
 @media all and (min-width: 875px) { .slider { height: 700px; } }
 
 .slider__item { margin-left: auto; margin-right: auto; max-width: 900px; width: 100%; position: absolute; left: 0; right: 0; opacity: 0; overflow: hidden; }
@@ -931,10 +931,10 @@ a.brand__logo { width: 40px; height: 40px; background-size: contain; background-
 @media all and (min-width: 410px) { .slider__figure .slider__caption { width: 100%; height: 98%; position: absolute; left: 0; right: 0; top: 0; opacity: 0; } }
 .slider__figure .slider__caption:hover { opacity: 1; background-color: rgba(0, 0, 0, 0.6); }
 
-.next, .prev { position: absolute; top: 50%; z-index: 100; }
+.slider__item__next, .slider__item__prev { position: absolute; top: 50%; z-index: 100; }
 
-.next { right: 0; }
+.slider__item__next { right: 0; }
 
-.prev { left: 0; }
+.slider__item__prev { left: 0; }
 
 /*# sourceMappingURL=style.css.map */

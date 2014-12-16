@@ -9,7 +9,7 @@
 // Slider
 $('.slider__item:nth-child(3)').addClass('current');
 
-$('.next').on('click', function (e) {
+$('.slider__item__next').on('click', function (e) {
 
     e.preventDefault();
 
@@ -22,7 +22,7 @@ $('.next').on('click', function (e) {
 });
 
 
-$('.prev').on('click', function (e) {
+$('.slider__item__prev').on('click', function (e) {
   
     e.preventDefault();
 
