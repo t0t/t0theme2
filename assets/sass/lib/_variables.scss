@@ -73,9 +73,15 @@ $color-base-darken	: darken($color-base, 10%);
  * Escala de grises
  */
 $black 				: rgb(0,0,0);
-$black-alpha 		: rgba(0,0,0,.6);
+$black-alpha 		: rgba(0,0,0,.3);
+$black-alpha-suave 	: rgba(0,0,0,.1);
+$black-alpha-medio	: rgba(0,0,0,.5);
+$black-alpha-fuerte	: rgba(0,0,0,.8);
 $white				: rgb(255,255,255);
-$white-alpha 		: rgba(255,255,255,0.5);
+$white-alpha 		: rgba(255,255,255,0.3);
+$white-alpha-suave 		: rgba(255,255,255,0.1);
+$white-alpha-medio		: rgba(255,255,255,0.5);
+$white-alpha-fuerte		: rgba(255,255,255,0.8);
 $lightgrey			: lighten($black, 30%);
 $grey				: lighten($black, 50%);
 // Bordes
