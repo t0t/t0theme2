@@ -30,8 +30,13 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="" class="">
                 <figcaption><?php the_title(); ?></figcaption></a>
             </figure>
-            
+
             <?}?>
+
+            <footer>
+            <?php the_tags('<ul class="list--inline"><li>','</li>,<li>', '</li></ul>'); ?>
+            <?php the_date('m, Y'); ?>
+            </footer>
 
             </div>
             

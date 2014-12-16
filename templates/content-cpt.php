@@ -20,7 +20,7 @@
 
             <? if ( has_post_thumbnail() ) { ?>
             <figure>
-                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('thumbnail'); ?>
+                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('medium'); ?>
                 <figcaption><?php the_title(); ?></figcaption></a>
             </figure>
             <?}else {?>   

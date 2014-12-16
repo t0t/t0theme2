@@ -22,4 +22,12 @@
 .list--ordered {}
 .list--unordered {}
 .list--definition {}
-	
+
+.list--inline {
+	margin-bottom: 0;
+	padding-left: 0;
+
+	li {
+		display: inline-block;
+	}
+}

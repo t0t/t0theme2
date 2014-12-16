@@ -863,6 +863,9 @@ input:required:focus:valid { background-color: #4dff4d; border: 1px solid green;
 
 .list-group--horizontal { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
 
+.list--inline { margin-bottom: 0; padding-left: 0; }
+.list--inline li { display: inline-block; }
+
 .galeria-fotos { display: -moz-flex; /* OLD - Firefox 19 */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ /* OLD - iOS 6-, Safari 3.1-6 */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: distribute; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; background-color: #77c784; padding: 3%; }
 
 .galeria-fotos__title { margin-bottom: 1.5%; }
