@@ -20,14 +20,17 @@
 
             <? if ( has_post_thumbnail() ) { ?>
             <figure>
-                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('thumbnail'); ?>
+                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                <?php the_post_thumbnail('medium'); ?>
                 <figcaption><?php the_title(); ?></figcaption></a>
             </figure>
             <?}else {?>   
             <figure>
+                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="" class="">
-                <figcaption><?php the_title(); ?></figcaption>
+                <figcaption><?php the_title(); ?></figcaption></a>
             </figure>
+            
             <?}?>
 
             </div>

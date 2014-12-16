@@ -2,7 +2,7 @@
 .galeria-fotos {
 	@include flexbox;
 	@include flex-wrap(wrap);
-    @include justify-content(space-between);
+    @include justify-content(space-around);
     background-color: lighten($color-base, 40%);
     padding: $gutterwidth;
 }
@@ -18,13 +18,15 @@
 	}
 
 	.galeria-fotos__figure {
+		@include max-width(75%);
 		position: relative;
-		width: 50%;
 		@extend %text-center;
+		margin-bottom: $gutterwidth*2;
 
     	//magia!!
     	@media (min-width: $bp3) {
       		width: calc(20% - #{$gutterwidth});
+			margin-bottom: 0;
     	}
   
 		.galeria-fotos__caption {

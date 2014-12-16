@@ -43,8 +43,8 @@
                 <?php foreach( $images as $image ): ?>
                     <figure class="galeria-fotos__figure">
                         <a href="<?php echo $image['url']; ?>" data-lightbox="serie" data-title="<?php echo $image['description']; ?>">
-                        <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" class="img--rounded" />
-                        <figcaption class="galeria-fotos__caption"><?php echo $image['caption']; ?>xxx</figcaption></a>
+                        <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" class="img--circle" />
+                        <figcaption class="galeria-fotos__caption"><?php echo $image['caption']; ?>Caption</figcaption></a>
                         </figure>
                 <?php endforeach; ?>
                 

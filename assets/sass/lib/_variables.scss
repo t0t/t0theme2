@@ -61,27 +61,33 @@ $baseletterspacing 	: 1px;
 /**
  * Brand stuff
  */
-$color-base			: rgb(147,132,92); // color principal
-$color-alt			: rgb(0,255,219); //color alternativo
-$color-base-invert 	: rgba(0,255,219,0.2);
+$color-base			: rgb(33,81,41); // color principal
+$color-alt			: rgb(200,220,203); //color alternativo
+$color-base-invert 	: complement($color-alt);
 $color-base-light	: lighten($color-base, 2%);
 $color-base-lighten	: lighten($color-base, 10%);
 $color-base-dark	: darken($color-base, 5%);
 $color-base-darken	: darken($color-base, 10%);
 
 /**
- * Escala de grises
+ * Transparencias
  */
+
 $black 				: rgb(0,0,0);
-$black-alpha 		: rgba(0,0,0,.3);
-$black-alpha-suave 	: rgba(0,0,0,.1);
-$black-alpha-medio	: rgba(0,0,0,.5);
-$black-alpha-fuerte	: rgba(0,0,0,.8);
+$black-alpha: transparentize($black, .3);
+$black-alpha-suave 	: transparentize($black, .1);
+$black-alpha-medio	: transparentize($black, .5);
+$black-alpha-fuerte	: transparentize($black, .8);
+
 $white				: rgb(255,255,255);
 $white-alpha 		: rgba(255,255,255,0.3);
 $white-alpha-suave 		: rgba(255,255,255,0.1);
 $white-alpha-medio		: rgba(255,255,255,0.5);
 $white-alpha-fuerte		: rgba(255,255,255,0.8);
+
+/**
+ * Escala de grises
+ */
 $lightgrey			: lighten($black, 30%);
 $grey				: lighten($black, 50%);
 // Bordes

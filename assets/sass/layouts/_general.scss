@@ -13,8 +13,7 @@ body {
 
 
 img {
-  @include max-width();
-  @extend %full-width;
+  @include max-width(100%);
   height: auto;
 }
 	// Fondos

@@ -63,7 +63,7 @@
 		}
 		&:hover {
 			opacity: 1;
-	    	background-color: $color-alt;
+	    	background-color: transparentize($color-alt, .2);
 	    }
 	}
 }

@@ -118,11 +118,9 @@
   * http://bit.ly/1e3YaBH
   */
 %clearfix {
-    clear: both; // no me flotes
-  
-	&:after{
-        content:"";
-        display:table;
-        clear:both;
-    }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
