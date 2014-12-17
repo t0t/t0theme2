@@ -16,7 +16,7 @@
 		 	bloginfo( 'name' ); 
 	 	?>
  	</title>
-	<!-- <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'> -->
+
 	<!--iOS -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
@@ -30,7 +30,7 @@
 
 	<div class="brand">
 
-		<a href="/" class="brand__logo efecto--gira"></a>
+		<a href="/" class="brand__logo efecto--gira" title="<?php bloginfo('name'); ?>" alt="<?php bloginfo('description'); ?>"></a>
 		<h1 class="h4 brand__name">
 			<?php bloginfo('name'); ?>
 			<span class="brand__description">

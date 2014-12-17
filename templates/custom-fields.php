@@ -15,9 +15,13 @@
     <?php elseif(get_row_layout() == "well-img"): //Wellcome panel ?>
     
     <div class="img--bg-big well well--img">
-        <h1 class="altheader efecto--fade"><?php the_sub_field("title"); ?></h1>
+        
+        <h1 class="altheader efecto--intro"><?php the_sub_field("title"); ?></h1>
+
         <p><?php the_sub_field("description"); ?></p>
+
         <button class="btn btn--image"><a href="<?php the_sub_field("call_to_action"); ?>">Work in progress</a></button>
+
     </div>   
 
 

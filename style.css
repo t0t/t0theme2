@@ -200,13 +200,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .nav-header__item, .idioma
 ========================================================================== */
 /*------------------------------------*\ $BREAKPOINTS
 \*------------------------------------*/
-@keyframes animacion--fade { 0%, 100% { opacity: 1; }
+@keyframes animacion--intro { 0%, 100% { opacity: 1; }
   50% { opacity: 0; } }
-@-ms-keyframes animacion--fade { 0%, 100% { opacity: 1; }
+@-ms-keyframes animacion--intro { 0%, 100% { opacity: 1; }
   50% { opacity: 0; } }
-@-webkit-keyframes animacion--fade { 0%, 100% { opacity: 1; }
+@-webkit-keyframes animacion--intro { 0%, 100% { opacity: 1; }
   50% { opacity: 0; } }
-.efecto--fade { -webkit-animation-name: animacion--fade; animation-name: animacion--fade; -webkit-animation-delay: 2s; animation-delay: 2s; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-timing-function: ease; animation-timing-function: ease; -moz-animation-name: animacion--fade; -moz-animation-delay: 2s; -moz-animation-duration: 1s; -moz-animation-iteration-count: 1; -moz-animation-timing-function: ease; -webkit-animation-name: animacion--fade; -webkit-animation-delay: 2s; -webkit-animation-duration: 1s; -webkit-animation-iteration-count: 1; -webkit-animation-timing-function: ease; }
+.efecto--intro { -webkit-animation-name: animacion--intro; animation-name: animacion--intro; -webkit-animation-delay: 2s; animation-delay: 2s; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-timing-function: ease; animation-timing-function: ease; -moz-animation-name: animacion--intro; -moz-animation-delay: 2s; -moz-animation-duration: 1s; -moz-animation-iteration-count: 1; -moz-animation-timing-function: ease; -webkit-animation-name: animacion--intro; -webkit-animation-delay: 2s; -webkit-animation-duration: 1s; -webkit-animation-iteration-count: 1; -webkit-animation-timing-function: ease; }
 
 @keyframes animacion--gira { from { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); }
   to { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg); } }
