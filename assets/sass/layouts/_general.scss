@@ -14,9 +14,11 @@ body {
 img {
   @include max-width(100%);
   height: auto;
-  filter: grayscale(1); //para navegadores molones
-  &:hover {
-  	filter: grayscale(0); //para navegadores molones
+  @media all and (min-width: $bp3) {
+  	filter: grayscale(1); //para navegadores molones
+	&:hover {
+	  filter: grayscale(0); //para navegadores molones
+	}
   }
 }
 	// Fondos
