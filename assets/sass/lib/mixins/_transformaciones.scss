@@ -100,33 +100,31 @@
 }
 
 
-// Efectos
-.efecto--fade {
+// Efectos, animaciones
 
   @include keyframe(animacion--fade) {
-    0% {opacity: 1}
+    0%, 100% {opacity: 1}
     50% {opacity:0}
-    100% {opacity: 1}
   }
 
-  @include animation(animacion--fade, 2s, 2s, ease, 2);
+.efecto--fade {
+
+  @include animation(animacion--fade, 2s, 1s, ease, 1);
 
 }
 
-.efecto--gira {
-
   @include keyframe(animacion--gira) {
-
     from {
       @include rotate(0deg);
     }
     to {
       @include rotate(360deg); 
     }
-
   }
 
-  @include animation (animacion--gira, 0.1s, 10s, linear, infinite);
+.efecto--gira {
+
+  @include animation (animacion--gira, 3s, 2s, linear, 1);
   
 }
 

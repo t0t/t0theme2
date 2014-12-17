@@ -10,6 +10,7 @@
   .grid__item {
     list-style: none;
     margin-bottom: $gutterwidth;
+
     //magia!!
     @media all and (min-width: $bp3) {
       img {
