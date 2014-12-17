@@ -30,7 +30,7 @@
 
 	<div class="brand">
 
-		<a href="/" class="brand__logo"></a>
+		<a href="/" class="brand__logo efecto--gira"></a>
 		<h1 class="h4 brand__name">
 			<?php bloginfo('name'); ?>
 			<span class="brand__description">
