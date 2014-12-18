@@ -1,34 +1,63 @@
-<?php
+<div class="grid">
 
-// check if the flexible content field has rows of data
-if( have_rows('layout_content') ):
+<?php if( have_rows('layout_content') ): ?>
+    <?php while ( have_rows('layout_content') ) : the_row();?>
 
-     // loop through the rows of data
-    while ( have_rows('layout_content') ) : the_row();
 
-        if( get_row_layout() == '2_cols' ):
+        <?php if( get_row_layout() == '2_cols' ):?>
 
-            the_sub_field('header');
-            the_sub_field('content');
-            the_sub_field('image');
+            <div class="grid__item">
+                
+                <h2>Layout de 2 columnas</h2>
 
-        elseif( get_row_layout() == '1_col_full' ): 
+                <!-- repeater block-->
+                <?php if( have_rows('block')): ?>
+                <?php while (have_rows('block')) : the_row(); ?>
 
-            the_sub_field('header');
-            the_sub_field('content');
-            the_sub_field('image');
+                <div>
 
-        endif;
+                <?php the_sub_field("header"); ?>
+                <?php the_sub_field("content"); ?>
+                <img src="<?php the_sub_field('image'); ?>" alt="">
 
-    endwhile;
+                </div>
 
-else :
+                <?php endwhile;?>
+                <?php endif ?>
 
-    // no layouts found
+            </div>
 
-endif;
 
-?>
+        <?php elseif( get_row_layout() == '1_col_full' ): ?>
+
+            <div class="grid__item">
+
+            <h2>Layout de 1 columna</h2>
+
+                <?php the_sub_field("header"); ?>
+                <?php the_sub_field("content"); ?>
+                <img src="<?php the_sub_field('image'); ?>" alt="">
+                
+            </div>
+            
+
+        <?php endif;?>
+
+
+    <?php endwhile;?>
+
+<?php else :?>
+<?php endif;?>
+    
+</div>
+
+
+
+
+
+
+
+
 
 
 
