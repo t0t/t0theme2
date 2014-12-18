@@ -185,7 +185,7 @@ code,
 kbd,
 samp {
 	font-family : $codefont;
-	@include font-size(13);
+	@include font-size(24);
 	line-height : $baselineheight;
 }
 

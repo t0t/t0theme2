@@ -701,7 +701,7 @@ ins { background-color: white; color: black; text-decoration: none; }
 
 mark { background-color: #77c784; color: black; }
 
-pre, code, kbd, samp { font-family: "Courier New", monospace; font-size: 13px; font-size: 0.5652173913rem; line-height: 2em; }
+pre, code, kbd, samp { font-family: "Courier New", monospace; font-size: 24px; font-size: 1.0434782609rem; line-height: 2em; }
 
 pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
 
@@ -903,6 +903,8 @@ input:required:focus:valid { background-color: #4dff4d; border: 1px solid green;
 .galeria-fotos__figure .galeria-fotos__caption:hover::after { content: ">" !important; -webkit-transform: translate(-15px, -20px); -ms-transform: translate(-15px, -20px); transform: translate(-15px, -20px); background-color: #77c784; }
 
 @media all and (min-width: 600px) { .grid, .grid-form, .grid-content { display: -moz-flex; /* OLD - Firefox 19 */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ /* OLD - iOS 6-, Safari 3.1-6 */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-flow: row wrap; -ms-flex-flow: row wrap; flex-flow: row wrap; -ms-flex-pack: distribute; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; } }
+.grid-content_wrap { width: 100%; }
+
 .grid-content__item { list-style: none; margin-bottom: 3%; margin-left: auto; margin-right: auto; max-width: 600px; width: 100%; }
 @media all and (min-width: 800px) { .grid-content__item { width: calc(50% - 3%); } }
 

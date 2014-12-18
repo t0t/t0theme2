@@ -26,6 +26,7 @@
 
         <?php elseif( get_row_layout() == '1_block' ):?>
 
+                <div class="grid-content_wrap">
                 <!-- repeater -->
                 <?php if( have_rows('block')): ?>
                 <?php while (have_rows('block')) : the_row(); ?>
@@ -40,7 +41,7 @@
 
                 <?php endwhile;?>
                 <?php endif ?>
-
+                </div>
 
 
             
