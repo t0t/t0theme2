@@ -23,6 +23,13 @@
   padding-left: $paddingbase;
   padding-right: $paddingbase;
 }
+%padding-top {
+  padding-top: $paddingbase;
+}
+%padding-vertical {
+  padding-top: $paddingbase;
+  padding-bottom: $paddingbase;
+}
 %margin-vertical {
   margin-top: $paddingbase;
   margin-bottom: $paddingbase;

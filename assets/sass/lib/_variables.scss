@@ -58,11 +58,24 @@ $baseletterspacing 	: 1px;
 /*------------------------------------*\
     $COLORS
 \*------------------------------------*/
+// Archivo de colores geniales:
+// ROJOS
+// rgb(225,86,89);
+// VERDES
+// rgb(119,199,132);
+// rgb(119,220,203);
+// AZULES
+// rgb(119,199,203);
+// NEUTROS
+// rgb(248,237,222);
+// rgb(197,152,128);
+// rgb(226,221,224);
+// 
 /**
  * Brand stuff
  */
-$color-base			: rgb(33,81,41); // color principal
-$color-alt			: rgb(200,220,203); //color alternativo
+$color-base			: rgb(119,199,132); // color principal
+$color-alt			: rgb(197,152,128); //color alternativo
 $color-base-invert 	: complement($color-alt);
 $color-base-light	: lighten($color-base, 2%);
 $color-base-lighten	: lighten($color-base, 10%);

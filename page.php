@@ -2,9 +2,11 @@
 
 <main>
 
+ 	<?php get_template_part('templates/page-header' ); ?>
+ 	
  	<?php get_template_part('templates/nav', 'main' ); ?>
 
-    <?php get_template_part('template/content', 'page'); ?>
+    <?php get_template_part('templates/custom-fields'); ?>
 
 </main>
 

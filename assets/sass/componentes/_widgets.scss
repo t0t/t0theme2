@@ -141,4 +141,18 @@
 		}
 	}
 
-
+// Video
+.video-main {
+	@extend %padding-vertical;
+	background-color: $black;
+}
+	.video-main__iframe {
+		@include max-width(560px);
+	}
+	.video-main__heading, .video-main__description {
+		color: $white;
+	}
+	.video-main__description {
+		margin-top: $paddingbase / 2;
+		margin-bottom: 0;
+	}

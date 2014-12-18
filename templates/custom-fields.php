@@ -1,3 +1,38 @@
+<?php
+
+// check if the flexible content field has rows of data
+if( have_rows('layout_content') ):
+
+     // loop through the rows of data
+    while ( have_rows('layout_content') ) : the_row();
+
+        if( get_row_layout() == '2_cols' ):
+
+            the_sub_field('header');
+            the_sub_field('content');
+            the_sub_field('image');
+
+        elseif( get_row_layout() == '1_col_full' ): 
+
+            the_sub_field('header');
+            the_sub_field('content');
+            the_sub_field('image');
+
+        endif;
+
+    endwhile;
+
+else :
+
+    // no layouts found
+
+endif;
+
+?>
+
+
+
+<!-- Componentes -->
 <?php if( get_field('flexible_content') ): ?>
 
     <?php while( has_sub_field("flexible_content") ): ?>
@@ -32,12 +67,16 @@
     
         <div class="galeria-fotos">
 
-            <h2 class="galeria-fotos__title">
-                <?php the_sub_field("title"); ?>
-            </h2>
-            <h3 class="galeria-fotos__description">
-                <?php the_sub_field("description"); ?>
-            </h3>
+            <?php if (get_sub_field("title")): ?>
+
+                <h2 class="galeria-fotos__title">
+                    <?php the_sub_field("title"); ?>
+                </h2>
+                <h3 class="galeria-fotos__description">
+                    <?php the_sub_field("description"); ?>
+                </h3>
+
+            <?php endif ?>
             
             <?php
             $images = get_sub_field('gallery');
@@ -48,7 +87,7 @@
                     <figure class="galeria-fotos__figure">
                         <a href="<?php echo $image['url']; ?>" data-lightbox="serie" data-title="<?php echo $image['description']; ?>">
                         <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" class="img--circle" />
-                        <figcaption class="galeria-fotos__caption"><?php echo $image['caption']; ?>Caption</figcaption></a>
+                        <figcaption class="galeria-fotos__caption"><?php echo $image['caption']; ?></figcaption></a>
                         </figure>
                 <?php endforeach; ?>
                 
@@ -59,7 +98,30 @@
     </section>
 
 
+
+    <?php elseif(get_row_layout() == "video"): // Layout Videos ?>
+
+    <?php if(get_sub_field('video_repeater')): ?>
+    <?php while(has_sub_field('video_repeater')): ?>  
+
+    <section class="video-main">
+
+        <h2 class="video-main__heading">Featured video</h2>
+            <?php if (get_sub_field("video")): ?>
+            <div class="video-main__iframe"><?php the_sub_field("video"); ?></div>
+            <?php endif ?>
+
+            <?php if (get_sub_field("descripcion")): ?>
+            <h5 class="video-main__description"><?php the_sub_field("descripcion"); ?></h5>
+            <?php endif ?>
+
+    </section>
     
+    <?php endwhile; ?>
+    <?php endif; ?> 
+
+
+
     <?php elseif(get_row_layout() == "post-carrousel"): // Posts Carousel ?>
     <?php 
         $loop = new WP_Query( array( 

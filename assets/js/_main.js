@@ -6,6 +6,8 @@
     $(function() {
 
 
+$(".video-main__iframe").fitVids();
+
 // Slider
 $('.slider__item:nth-child(3)').addClass('current');
 
