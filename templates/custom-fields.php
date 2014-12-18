@@ -1,49 +1,51 @@
-<div class="grid">
+<div class="grid-content">
 
 <?php if( have_rows('layout_content') ): ?>
     <?php while ( have_rows('layout_content') ) : the_row();?>
 
 
-        <?php if( get_row_layout() == '2_cols' ):?>
 
-            <div class="grid__item">
-                
-                <h2>Layout de 2 columnas</h2>
+        <?php if( get_row_layout() == '2_blocks' ):?>
 
-                <!-- repeater block-->
+                <!-- repeater -->
                 <?php if( have_rows('block')): ?>
                 <?php while (have_rows('block')) : the_row(); ?>
-
-                <div>
-
+            
+                <div class="grid-content__item">
+                
                 <?php the_sub_field("header"); ?>
                 <?php the_sub_field("content"); ?>
                 <img src="<?php the_sub_field('image'); ?>" alt="">
-
+            
                 </div>
 
                 <?php endwhile;?>
                 <?php endif ?>
 
-            </div>
 
 
-        <?php elseif( get_row_layout() == '1_col_full' ): ?>
+        <?php elseif( get_row_layout() == '1_block' ):?>
 
-            <div class="grid__item">
-
-            <h2>Layout de 1 columna</h2>
-
+                <!-- repeater -->
+                <?php if( have_rows('block')): ?>
+                <?php while (have_rows('block')) : the_row(); ?>
+            
+                <div class="grid-content__item">
+                
                 <?php the_sub_field("header"); ?>
                 <?php the_sub_field("content"); ?>
                 <img src="<?php the_sub_field('image'); ?>" alt="">
-                
-            </div>
+            
+                </div>
+
+                <?php endwhile;?>
+                <?php endif ?>
+
+
+
             
 
         <?php endif;?>
-
-
     <?php endwhile;?>
 
 <?php else :?>

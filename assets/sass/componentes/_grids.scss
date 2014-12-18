@@ -1,11 +1,28 @@
 // Componente para un mini grid...
 @media all and (min-width: $bp3) {
-  .grid, .grid-form {
+  .grid, .grid-form, .grid-content {
     @include flexbox;
     @include flex-flow(row wrap);
     @include justify-content(space-around);
   }
 }
+  
+
+  //Clase para the_content en acf
+  .grid-content__item {
+    list-style: none;
+    margin-bottom: $gutterwidth;
+    @include max-width(600px);
+
+    @media all and (min-width: $bp3) {
+      img {}
+    }
+
+    @media all and (min-width: 800px) {
+      width: calc(50% - #{$gutterwidth});
+    }
+
+  }
 
   .grid__item {
     list-style: none;
