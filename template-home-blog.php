@@ -7,7 +7,6 @@ Template Name: Blog
 
 
 <!-- Fixed Nav -->
-<h2>Inline Nav</h2>
 <?php get_template_part( 'templates/nav', 'main' ); ?>
 
 <!-- Page Header -->
