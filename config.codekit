@@ -2146,28 +2146,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/logo.sketch\/QuickLook\/Preview.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6557,
-		"inputAbbreviatedPath": "\/assets\/img\/logo.sketch\/QuickLook\/Preview.png",
-		"outputAbbreviatedPath": "\/assets\/img\/logo.sketch\/QuickLook\/Preview.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/logo.sketch\/QuickLook\/Thumbnail.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 61329,
-		"inputAbbreviatedPath": "\/assets\/img\/logo.sketch\/QuickLook\/Thumbnail.png",
-		"outputAbbreviatedPath": "\/assets\/img\/logo.sketch\/QuickLook\/Thumbnail.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/img\/logo@2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2197,6 +2175,17 @@
 		"initialSize": 1034,
 		"inputAbbreviatedPath": "\/assets\/img\/logoyo_icoform.png",
 		"outputAbbreviatedPath": "\/assets\/img\/logoyo_icoform.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/Stroke 20.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5139,
+		"inputAbbreviatedPath": "\/assets\/img\/Stroke 20.png",
+		"outputAbbreviatedPath": "\/assets\/img\/Stroke 20.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

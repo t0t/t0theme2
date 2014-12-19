@@ -24,6 +24,43 @@ hr {
 }
 
 
+
+/*------------------------------------*\
+    SVG
+\*------------------------------------*/
+
+svg {
+	width: 100%;
+	height: auto;
+	
+	g {
+		// fill-rule: evenodd;
+		width: 10px;
+		height: 10px;
+	}
+	
+	path {
+		stroke: $white;
+		stroke-width: 4;
+		fill: none;
+		stroke-dashoffset: 0; 
+		stroke-dasharray: 0;
+
+		&:hover {
+			fill: $color-alt;
+			fill-opacity: 1;
+			fill-rule: inherit;
+			stroke-width: 8;
+			// stroke-linejoin: round;
+			// stroke-linecap: round;
+			stroke-dashoffset: 100; 
+			stroke-dasharray: 100;
+		}
+	}
+}
+
+
+
 /*------------------------------------*\
     $ELEMENTOS-FIGURE
 \*------------------------------------*/

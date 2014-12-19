@@ -14,11 +14,11 @@
 
 a {
 	&.brand__logo {
-		width: 40px;
-		height: 40px;
-		@include background-image(logo,contain,svg);
-		background-repeat: no-repeat;
-		background-position: center;
+		// width: 40px;
+		// height: 40px;
+		//@include background-image(logo,contain,svg);
+		//background-repeat: no-repeat;
+		//background-position: center;
 		margin-right: $gutterwidth/4;
 	}
 }

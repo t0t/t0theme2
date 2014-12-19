@@ -643,6 +643,13 @@ hr { clear: both; margin: 2em 0; padding: 0; height: 1px; border: 0; border-top:
 
 .img--circle { border-radius: 100%; }
 
+/*------------------------------------*\ SVG
+\*------------------------------------*/
+svg { width: 100%; height: auto; }
+svg g { width: 10px; height: 10px; }
+svg path { stroke: white; stroke-width: 4; fill: none; stroke-dashoffset: 0; stroke-dasharray: 0; }
+svg path:hover { fill: #c59880; fill-opacity: 1; fill-rule: inherit; stroke-width: 8; stroke-dashoffset: 100; stroke-dasharray: 100; }
+
 /*------------------------------------*\ $ELEMENTOS-FIGURE
 \*------------------------------------*/
 figure figcaption { font-weight: normal; line-height: 1.3333333333em; font-size: 19.1666666667px; font-size: 0.8333333333rem; font-style: italic; }
@@ -782,6 +789,9 @@ Main navbar
 
 .well--img { margin-left: auto; margin-right: auto; max-width: 1420px; width: 100%; width: 100%; min-height: 600px; border-radius: 0; }
 .well--img p, .well--img h3 { color: white; }
+
+.well--anim { margin-left: auto; margin-right: auto; max-width: 100%; width: 100%; width: 100%; min-height: 600px; border-radius: 0; }
+.well--anim p, .well--anim h3 { color: white; }
 
 .video-main { background-color: black; }
 
@@ -927,9 +937,7 @@ input:required:focus:valid { background-color: #4dff4d; border: 1px solid green;
 .brand { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding: 1.5%; background-color: #c59880; }
 @media all and (min-width: 600px) { .brand { max-height: 55px; } }
 
-a.brand__logo { width: 40px; height: 40px; background-size: contain; background-image: url(assets/img/logo.svg); background-repeat: no-repeat; background-position: center; margin-right: 0.75%; }
-.no-svg a.brand__logo { background-image: url(assets/img/logo.png); }
-@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { .no-svg a.brand__logo { background-image: url(assets/img/logo@2x.png); } }
+a.brand__logo { margin-right: 0.75%; }
 
 .brand__name, .brand__description { line-height: 1.3; }
 

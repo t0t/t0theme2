@@ -141,6 +141,15 @@
 		}
 	}
 
+	.well--anim {
+		@include max-width(100%);
+		@include size(100%, 600px);
+		border-radius: 0;
+		p, h3 {
+			color: $white;
+		}
+	}
+
 // Video
 .video-main {
 	@extend %padding-vertical;
