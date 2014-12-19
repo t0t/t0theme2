@@ -165,6 +165,7 @@ $alertwarningtext 	: darken($color-warning, 20%);
 $badgebackground    : $color-base;
 $badgecolor         : $textcolor;
 
+
 // botones
 $buttonbackground   : $color-base-light;
 $buttonbordercolor  : darken($buttonbackground, 10%);
@@ -174,15 +175,13 @@ $buttonborderwidth  : 1px;
 $buttonborderstyle  : solid;
 
 
-
-
 // formularios
 $inputbackground    : $white;
 $inputborder        : $color-base;
 $inputborderwidth   : 1px;
 $inputborderstyle   : dotted;
 $inputhover         : lighten($black, 50%);
-$inputfocus         : $color-base, 40%;
+$inputfocus         : lighten($color-base, 33%);
 $placeholdercolor   : $color-base-darken;
 
 

@@ -323,14 +323,9 @@ img { margin-left: auto; margin-right: auto; max-width: 100%; width: 100%; heigh
 
 ::selection { background-color: #77c784; color: black; text-shadow: none; }
 
-.wpcf7 { display: table-cell; width: 75%; }
+.wpcf7 { display: table-cell; }
+.wpcf7 img { width: auto; }
 @media screen and (max-width: 600px) { .wpcf7 { display: table-row; } }
-
-.mapp-iw { color: black; }
-
-@media all and (max-width: 600px) { .nav-arrows { display: none; } }
-
-.page-template-template-contacto-php .sello { display: none; }
 
 .aligncenter { margin: 1em auto; }
 
@@ -814,7 +809,7 @@ label input, label textarea, label select { display: block; }
 
 input, textarea, select { display: inline-block; width: 100%; padding: 4px; margin-bottom: 0.5em; background-color: white; border: 1px dotted #77c784; color: black; }
 input:hover, textarea:hover, select:hover { border-color: gray; }
-input:focus, textarea:focus, select:focus { background-color: yellow; }
+input:focus, textarea:focus, select:focus { background-color: #eef8f0; }
 
 input[type="image"], input[type="checkbox"], input[type="radio"] { width: auto; height: auto; padding: 0; margin: 6px 0; *margin-top: 0; line-height: normal; cursor: pointer; border: 0 \9; }
 
@@ -846,7 +841,7 @@ input[type="hidden"] { display: none; }
 
 input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] { -webkit-opacity: 0.5; -moz-opacity: 0.5; opacity: 0.5; cursor: not-allowed; }
 
-input:focus, textarea:focus { border-color: #77c784, 40%; outline: 0; outline: thin dotted \9; }
+input:focus, textarea:focus { border-color: #eef8f0; outline: 0; outline: thin dotted \9; }
 
 input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus, select:focus { box-shadow: none; }
 

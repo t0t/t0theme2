@@ -150,25 +150,20 @@ input {
 	.wpcf7-display-none {}
 }
 
-// WPCF7
 .wpcf7 {
 	display: table-cell;	
-	width: 75%;
+	img { width: auto; } // que no hayan sorpresas...
 	@media screen and (max-width: $bp3) {
 		display: table-row;
 	}
 }
 
 // Mappress
-.mapp-iw {
-	color: $black;
-}
+//.mapp-iw { color: $black; }
 
 // Vegas
-.nav-arrows {
-	@media all and (max-width: $bp3) {
-		display: none;
-	}
-}
-//oculta sello en contacto
-.page-template-template-contacto-php .sello { display: none; }
+// .nav-arrows {
+// 	@media all and (max-width: $bp3) {
+// 		display: none;
+// 	}
+// }

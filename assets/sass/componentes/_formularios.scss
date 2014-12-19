@@ -84,7 +84,7 @@ select {
 		border-color : $inputhover;
 	}
 	&:focus {
-		background-color: yellow;
+		background-color: $inputfocus;
 	}
 }
 

@@ -1,11 +1,35 @@
-<div class="grid-content">
 
+
+
+
+
+
+<!-- Bloques -->
 <?php if( have_rows('layout_content') ): ?>
     <?php while ( have_rows('layout_content') ) : the_row();?>
 
+    <div class="grid-content">
 
 
-        <?php if( get_row_layout() == '2_blocks' ):?>
+
+    <?php if( get_row_layout() == 'contact_form' ):?>
+
+    
+        <?php
+            if ( function_exists( 'wpcf7_enqueue_scripts' ) ) { wpcf7_enqueue_scripts(); }
+            if ( function_exists( 'wpcf7_enqueue_styles' ) ) { wpcf7_enqueue_styles(); }
+        ?>
+
+        <div class="grid-content__item">
+            <img src="<?php the_sub_field("image"); ?>" alt="">
+        </div>
+        <div class="grid-content__item">
+            <?php echo do_shortcode('[contact-form-7 id="575" title="Contacto"]'); ?>
+        </div>
+
+
+
+        <?php elseif( get_row_layout() == '2_blocks' ):?>
 
                 <!-- repeater -->
                 <?php if( have_rows('block')): ?>
@@ -27,6 +51,7 @@
         <?php elseif( get_row_layout() == '1_block' ):?>
 
                 <div class="grid-content_wrap">
+
                 <!-- repeater -->
                 <?php if( have_rows('block')): ?>
                 <?php while (have_rows('block')) : the_row(); ?>
@@ -43,18 +68,16 @@
                 <?php endif ?>
                 </div>
 
-
             
 
         <?php endif;?>
+    
+    </div>
     <?php endwhile;?>
 
 <?php else :?>
 <?php endif;?>
     
-</div>
-
-
 
 
 
