@@ -48,12 +48,19 @@
 		}
 	}
 
-	.main-footer__btn { 
-		
-	}
 	.main-footer__credits {
 		flex: 2;
 		aside {
 			margin-top: $gutterwidth;
+		}
+
+		a, a:visited {
+			color: $linkcolorfooter;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		a i:hover {
+			
 		}
 	}

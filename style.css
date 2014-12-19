@@ -269,6 +269,8 @@ article, aside, figure, footer, header, hgroup, nav, section { display: block; }
 
 .main-footer__credits { -webkit-flex: 2; -ms-flex: 2; flex: 2; }
 .main-footer__credits aside { margin-top: 3%; }
+.main-footer__credits a, .main-footer__credits a:visited { color: black; }
+.main-footer__credits a:hover { text-decoration: underline; }
 
 html { font-size: 75%; }
 @media all and (min-width: 600px) { html { font-size: 100%; } }
@@ -616,6 +618,13 @@ input[type="submit"].btn:hover { border-color: #77c784; }
 .btn--warning { background-color: red; color: #330000; }
 .btn--warning:hover { color: #ffcccc; }
 .btn--warning:visited { color: #330000; }
+
+/**
+* Botón en footer
+*/
+.btn--footer { color: black; border: 1px solid black; }
+.btn--footer:hover { color: black; border: none; text-decoration: underline; border: 1px dotted black; }
+.btn--footer:visited { color: #330000; }
 
 .btn--inactive, .btn--inactive:hover, .btn--inactive:active, .btn--inactive:focus { -webkit-opacity: 0.5; -moz-opacity: 0.5; opacity: 0.5; cursor: default; }
 
