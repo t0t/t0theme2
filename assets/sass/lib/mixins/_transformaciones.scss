@@ -128,3 +128,12 @@
   
 }
 
+@include keyframe(efecto-stroke-dashoffset) {
+  50% {
+    stroke-dashoffset: 0;
+  }
+}
+.efecto--stroke-dashoffset {
+  @include animation(efecto-stroke-dashoffset, 1s,10s,linear,infinite);
+}
+

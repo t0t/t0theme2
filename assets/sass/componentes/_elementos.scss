@@ -30,33 +30,62 @@ hr {
 \*------------------------------------*/
 
 svg {
-	width: 100%;
-	height: auto;
-	
-	g {
-		// fill-rule: evenodd;
-		width: 10px;
-		height: 10px;
-	}
-	
-	path {
-		stroke: $white;
-		stroke-width: 4;
-		fill: none;
-		stroke-dashoffset: 0; 
-		stroke-dasharray: 0;
 
-		&:hover {
-			fill: $color-alt;
-			fill-opacity: 1;
-			fill-rule: inherit;
-			stroke-width: 8;
+	&.brand__logo {
+		width: 50px;
+		height: 50px;
+
+		path {
+			fill: none;
+			stroke: $black;
+			stroke-width: 1;
 			// stroke-linejoin: round;
 			// stroke-linecap: round;
-			stroke-dashoffset: 100; 
-			stroke-dasharray: 100;
+			stroke-dashoffset: 500; 
+			stroke-dasharray: 500;
+			stroke-miterlimit: 10;
+		
+			&:hover {
+				fill: $color-alt;
+				fill-opacity: 1;
+				fill-rule: inherit;
+				// stroke-width: 2;
+				// stroke-linejoin: round;
+				// stroke-linecap: round;
+				stroke-dashoffset: 10; 
+				stroke-dasharray: 10;
+			}
 		}
 	}
+
+	&.anim-intro {
+		width: 50%;
+		min-height: 300px;
+
+		path {
+			fill: none;
+			stroke: $black;
+			stroke-width: 1;
+			// stroke-linejoin: round;
+			// stroke-linecap: round;
+			stroke-dashoffset: 500; 
+			stroke-dasharray: 500;
+			// stroke-miterlimit: 10;
+			@include scale(2);
+
+			&:hover {
+				fill: $color-alt;
+				fill-opacity: 1;
+				fill-rule: inherit;
+				stroke-width: 2;
+				// stroke-linejoin: round;
+				// stroke-linecap: round;
+				stroke-dashoffset: 10; 
+				stroke-dasharray: 10;
+			}
+		}
+	}
+
 }
 
 
