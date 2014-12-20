@@ -1,25 +1,51 @@
 .brand {
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start; //alineado horizontal
-		align-items: center; //alineado vertical
-		padding: $gutterwidth/2;
-		background-color: $color-alt;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start; //alineado horizontal
+	align-items: center; //alineado vertical
+	padding: $gutterwidth/2;
+	background-color: $color-alt;
 	
-		@media all and (min-width:$bp3) {
+	@media all and (min-width:$bp3) {
 		// flex-direction: row;
 		max-height: 55px;
-		}
+	}
 }
 
 a {
 	&.brand__logo {
-		// width: 40px;
-		// height: 40px;
 		//@include background-image(logo,contain,svg);
 		//background-repeat: no-repeat;
 		//background-position: center;
 		margin-right: $gutterwidth/4;
+		width: 50px;
+		height: 50px;
+	
+		svg {
+			
+			path {
+
+				fill: none;
+				stroke: $white;
+				stroke-width: 1;
+				// stroke-linejoin: round;
+				// stroke-linecap: round;
+				stroke-dashoffset: 500; 
+				stroke-dasharray: 500;
+				stroke-miterlimit: 10;
+			
+				&:hover {
+					fill: $color-alt;
+					fill-opacity: 1;
+					fill-rule: inherit;
+					// stroke-width: 2;
+					// stroke-linejoin: round;
+					// stroke-linecap: round;
+					stroke-dashoffset: 10; 
+					stroke-dasharray: 10;
+				}
+			}	
+		}
 	}
 }
 	.brand__name, .brand__description {
@@ -33,34 +59,3 @@ a {
 	.brand__description {
 		display: block;
 	}
-
-.brand__logo {
-	width: 50px;
-	height: 50px;
-	
-	svg {
-		
-		path {
-
-			fill: none;
-			stroke: $black;
-			stroke-width: 1;
-			// stroke-linejoin: round;
-			// stroke-linecap: round;
-			stroke-dashoffset: 500; 
-			stroke-dasharray: 500;
-			stroke-miterlimit: 10;
-		
-			&:hover {
-				fill: $color-alt;
-				fill-opacity: 1;
-				fill-rule: inherit;
-				// stroke-width: 2;
-				// stroke-linejoin: round;
-				// stroke-linecap: round;
-				stroke-dashoffset: 10; 
-				stroke-dasharray: 10;
-			}
-		}	
-	}
-}
