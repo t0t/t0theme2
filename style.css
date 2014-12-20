@@ -204,27 +204,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .nav-header__item, .idioma
 ========================================================================== */
 /*------------------------------------*\ $BREAKPOINTS
 \*------------------------------------*/
-@keyframes animacion--intro { 0%, 100% { opacity: 1; }
-  50% { opacity: 0; } }
-@-ms-keyframes animacion--intro { 0%, 100% { opacity: 1; }
-  50% { opacity: 0; } }
-@-webkit-keyframes animacion--intro { 0%, 100% { opacity: 1; }
-  50% { opacity: 0; } }
-.efecto--intro { -webkit-animation-name: animacion--intro; animation-name: animacion--intro; -webkit-animation-delay: 2s; animation-delay: 2s; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-timing-function: ease; animation-timing-function: ease; -moz-animation-name: animacion--intro; -moz-animation-delay: 2s; -moz-animation-duration: 1s; -moz-animation-iteration-count: 1; -moz-animation-timing-function: ease; -webkit-animation-name: animacion--intro; -webkit-animation-delay: 2s; -webkit-animation-duration: 1s; -webkit-animation-iteration-count: 1; -webkit-animation-timing-function: ease; }
-
-@keyframes animacion--gira { from { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); }
-  to { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg); } }
-@-ms-keyframes animacion--gira { from { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); }
-  to { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg); } }
-@-webkit-keyframes animacion--gira { from { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); }
-  to { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg); } }
-.efecto--gira { -webkit-animation-name: animacion--gira; animation-name: animacion--gira; -webkit-animation-delay: 3s; animation-delay: 3s; -webkit-animation-duration: 2s; animation-duration: 2s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-timing-function: linear; animation-timing-function: linear; -moz-animation-name: animacion--gira; -moz-animation-delay: 3s; -moz-animation-duration: 2s; -moz-animation-iteration-count: 1; -moz-animation-timing-function: linear; -webkit-animation-name: animacion--gira; -webkit-animation-delay: 3s; -webkit-animation-duration: 2s; -webkit-animation-iteration-count: 1; -webkit-animation-timing-function: linear; }
-
-@keyframes efecto-stroke-dashoffset { 50% { stroke-dashoffset: 0; } }
-@-ms-keyframes efecto-stroke-dashoffset { 50% { stroke-dashoffset: 0; } }
-@-webkit-keyframes efecto-stroke-dashoffset { 50% { stroke-dashoffset: 0; } }
-.efecto--stroke-dashoffset { -webkit-animation-name: efecto-stroke-dashoffset; animation-name: efecto-stroke-dashoffset; -webkit-animation-delay: 1s; animation-delay: 1s; -webkit-animation-duration: 10s; animation-duration: 10s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-timing-function: linear; animation-timing-function: linear; -moz-animation-name: efecto-stroke-dashoffset; -moz-animation-delay: 1s; -moz-animation-duration: 10s; -moz-animation-iteration-count: infinite; -moz-animation-timing-function: linear; -webkit-animation-name: efecto-stroke-dashoffset; -webkit-animation-delay: 1s; -webkit-animation-duration: 10s; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear; }
-
 .wrapper > div:nth-of-type(1n), .wrapper > div:nth-of-type(3n), .main > div:nth-of-type(1n), .main > div:nth-of-type(3n) { width: calc(100% * 0.1666666667 - 6px * (1 - 0.1666666667)); }
 
 .main > div:nth-of-type(2n), .main > div:nth-of-type(4n) { width: calc(100% * 0.3333333333 - 6px * (1 - 0.3333333333)); }
@@ -648,15 +627,6 @@ hr { clear: both; margin: 2em 0; padding: 0; height: 1px; border: 0; border-top:
 
 .img--circle { border-radius: 100%; }
 
-/*------------------------------------*\ SVG
-\*------------------------------------*/
-svg.brand__logo { width: 50px; height: 50px; }
-svg.brand__logo path { fill: none; stroke: black; stroke-width: 1; stroke-dashoffset: 500; stroke-dasharray: 500; stroke-miterlimit: 10; }
-svg.brand__logo path:hover { fill: #c59880; fill-opacity: 1; fill-rule: inherit; stroke-dashoffset: 10; stroke-dasharray: 10; }
-svg.anim-intro { width: 50%; min-height: 300px; }
-svg.anim-intro path { fill: none; stroke: black; stroke-width: 1; stroke-dashoffset: 500; stroke-dasharray: 500; -webkit-transform: scale(2); -ms-transform: scale(2); transform: scale(2); }
-svg.anim-intro path:hover { fill: #c59880; fill-opacity: 1; fill-rule: inherit; stroke-width: 2; stroke-dashoffset: 10; stroke-dasharray: 10; }
-
 /*------------------------------------*\ $ELEMENTOS-FIGURE
 \*------------------------------------*/
 figure figcaption { font-weight: normal; line-height: 1.3333333333em; font-size: 19.1666666667px; font-size: 0.8333333333rem; font-style: italic; }
@@ -952,6 +922,10 @@ a.brand__logo { margin-right: 0.75%; }
 
 .brand__description { display: block; }
 
+.brand__logo { width: 50px; height: 50px; }
+.brand__logo svg path { fill: none; stroke: black; stroke-width: 1; stroke-dashoffset: 500; stroke-dasharray: 500; stroke-miterlimit: 10; }
+.brand__logo svg path:hover { fill: #c59880; fill-opacity: 1; fill-rule: inherit; stroke-dashoffset: 10; stroke-dasharray: 10; }
+
 .shapes { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
 
 .shape-rounded { border-radius: 10px; width: 100px; min-height: 50px; }
@@ -963,6 +937,31 @@ a.brand__logo { margin-right: 0.75%; }
 .shape-square { width: 100px; min-height: 100px; }
 
 .shape-custom { width: 100px; min-height: 50px; }
+
+.anim-intro { width: 100%; height: 600px; }
+.anim-intro path { fill: none; stroke: black; stroke-width: 1; stroke-dashoffset: 500; stroke-dasharray: 500; -webkit-transform: scale(2); -ms-transform: scale(2); transform: scale(2); }
+.anim-intro path:hover { fill: #c59880; fill-opacity: 1; fill-rule: inherit; stroke-width: 2; stroke-dashoffset: 10; stroke-dasharray: 10; }
+
+@keyframes animacion--intro { 0%, 100% { opacity: 1; }
+  50% { opacity: 0; } }
+@-ms-keyframes animacion--intro { 0%, 100% { opacity: 1; }
+  50% { opacity: 0; } }
+@-webkit-keyframes animacion--intro { 0%, 100% { opacity: 1; }
+  50% { opacity: 0; } }
+.efecto--intro { -webkit-animation-name: animacion--intro; animation-name: animacion--intro; -webkit-animation-delay: 2s; animation-delay: 2s; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-timing-function: ease; animation-timing-function: ease; -moz-animation-name: animacion--intro; -moz-animation-delay: 2s; -moz-animation-duration: 1s; -moz-animation-iteration-count: 1; -moz-animation-timing-function: ease; -webkit-animation-name: animacion--intro; -webkit-animation-delay: 2s; -webkit-animation-duration: 1s; -webkit-animation-iteration-count: 1; -webkit-animation-timing-function: ease; }
+
+@keyframes animacion--gira { from { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg); } }
+@-ms-keyframes animacion--gira { from { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg); } }
+@-webkit-keyframes animacion--gira { from { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg); } }
+.efecto--gira { -webkit-animation-name: animacion--gira; animation-name: animacion--gira; -webkit-animation-delay: 3s; animation-delay: 3s; -webkit-animation-duration: 2s; animation-duration: 2s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-timing-function: linear; animation-timing-function: linear; -moz-animation-name: animacion--gira; -moz-animation-delay: 3s; -moz-animation-duration: 2s; -moz-animation-iteration-count: 1; -moz-animation-timing-function: linear; -webkit-animation-name: animacion--gira; -webkit-animation-delay: 3s; -webkit-animation-duration: 2s; -webkit-animation-iteration-count: 1; -webkit-animation-timing-function: linear; }
+
+@keyframes efecto-stroke-dashoffset { 50% { stroke-dashoffset: 0; } }
+@-ms-keyframes efecto-stroke-dashoffset { 50% { stroke-dashoffset: 0; } }
+@-webkit-keyframes efecto-stroke-dashoffset { 50% { stroke-dashoffset: 0; } }
+.efecto--stroke-dashoffset { -webkit-animation-name: efecto-stroke-dashoffset; animation-name: efecto-stroke-dashoffset; -webkit-animation-delay: 1s; animation-delay: 1s; -webkit-animation-duration: 10s; animation-duration: 10s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-timing-function: linear; animation-timing-function: linear; -moz-animation-name: efecto-stroke-dashoffset; -moz-animation-delay: 1s; -moz-animation-duration: 10s; -moz-animation-iteration-count: infinite; -moz-animation-timing-function: linear; -webkit-animation-name: efecto-stroke-dashoffset; -webkit-animation-delay: 1s; -webkit-animation-duration: 10s; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear; }
 
 .slider { z-index: 1; position: relative; height: 300px; }
 .slider ul { margin: 0; padding: 0; }
