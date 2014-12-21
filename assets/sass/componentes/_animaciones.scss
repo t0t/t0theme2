@@ -3,8 +3,8 @@
 
 .anim-intro {
 	width: 100%;
-	height: auto;
-
+	height: 300px;
+	
 	path {
 		fill: none;
 		stroke: $white;
@@ -14,7 +14,7 @@
 		stroke-dashoffset: 500; 
 		stroke-dasharray: 500;
 		// stroke-miterlimit: 10;
-		@include scale(2);
+		// @include scale(2);
 
 		&:hover {
 			fill: $color-alt;

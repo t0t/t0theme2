@@ -30,11 +30,11 @@
 
 	<div class="brand">
 
-		<a href="/" class="brand__logo" title="<?php bloginfo('name'); ?>" alt="<?php bloginfo('description'); ?>">
+		<a href="/" title="<?php bloginfo('name'); ?>" alt="<?php bloginfo('description'); ?>">
 			
 			<!-- <img src="<?php //echo get_bloginfo('template_directory');?>/assets/img/logo.svg" alt="logo" class="brand__logo"> -->
 
-			<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" preserveAspectRatio="xMinYMin">
+			<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="brand__logo" viewBox="0 0 50 50" preserveAspectRatio="xMidYMid meet">
 
     		<title>Logo t0theme</title>
     		<desc>Logotipo de tema Wordpress y Styleguide de Sergio Forés</desc>

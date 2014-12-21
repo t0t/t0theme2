@@ -914,9 +914,10 @@ input:required:focus:valid { background-color: #4dff4d; border: 1px solid green;
 .brand { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding: 1.5%; background-color: #c59880; }
 @media all and (min-width: 600px) { .brand { max-height: 55px; } }
 
-a.brand__logo { margin-right: 0.75%; width: 50px; height: 50px; }
-a.brand__logo svg path { fill: none; stroke: white; stroke-width: 1; stroke-dashoffset: 500; stroke-dasharray: 500; stroke-miterlimit: 10; }
-a.brand__logo svg path:hover { fill: #c59880; fill-opacity: 1; fill-rule: inherit; stroke-dashoffset: 10; stroke-dasharray: 10; }
+a { margin-right: 0.75%; }
+a svg.brand__logo { width: 50px; height: 50px; border: 1px solid white; }
+a svg.brand__logo path { fill: none; stroke: white; stroke-width: 1; stroke-dashoffset: 500; stroke-dasharray: 500; stroke-miterlimit: 10; }
+a svg.brand__logo path:hover { fill: #c59880; fill-opacity: 1; fill-rule: inherit; stroke-dashoffset: 10; stroke-dasharray: 10; }
 
 .brand__name, .brand__description { line-height: 1.3; }
 
@@ -936,8 +937,8 @@ a.brand__logo svg path:hover { fill: #c59880; fill-opacity: 1; fill-rule: inheri
 
 .shape-custom { width: 100px; min-height: 50px; }
 
-.anim-intro { width: 100%; height: auto; }
-.anim-intro path { fill: none; stroke: white; stroke-width: 4; stroke-dashoffset: 500; stroke-dasharray: 500; -webkit-transform: scale(2); -ms-transform: scale(2); transform: scale(2); }
+.anim-intro { width: 100%; height: 300px; }
+.anim-intro path { fill: none; stroke: white; stroke-width: 4; stroke-dashoffset: 500; stroke-dasharray: 500; }
 .anim-intro path:hover { fill: #c59880; fill-opacity: 0; fill-rule: inherit; stroke-width: 2; stroke-dashoffset: 10; stroke-dasharray: 10; }
 
 @keyframes animacion--intro { 0%, 100% { opacity: 1; }

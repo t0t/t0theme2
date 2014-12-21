@@ -122,7 +122,7 @@
 
         <!-- <img src="<?php //echo get_bloginfo('template_directory');?>/assets/img/logo_anim.svg" alt="" class="anim-intro"> -->
         
-        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="anim-intro" viewBox="0 0 600 250">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="anim-intro" viewBox="0 -14 151 151" preserveAspectRatio="xMidYMid meet">
 
             <title>Logo t0theme anim</title>
             <desc>Logotipo de tema Wordpress y Styleguide de Sergio Forés</desc>
