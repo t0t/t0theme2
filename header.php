@@ -34,7 +34,7 @@
 			
 			<!-- <img src="<?php //echo get_bloginfo('template_directory');?>/assets/img/logo.svg" alt="logo" class="brand__logo"> -->
 
-			<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="brand__logo" viewBox="0 0 50 50" preserveAspectRatio="xMinYMin meet">
+			<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="brand__logo" aria-labelledby="title desc">
 
     		<title>Logo t0theme</title>
     		<desc>Logotipo de tema Wordpress y Styleguide de Sergio Forés</desc>
