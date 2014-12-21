@@ -914,7 +914,7 @@ input:required:focus:valid { background-color: #4dff4d; border: 1px solid green;
 .brand { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding: 1.5%; background-color: #c59880; }
 @media all and (min-width: 600px) { .brand { max-height: 55px; } }
 .brand a { margin-right: 0.75%; }
-.brand a svg.brand__logo { width: 54px; height: 44px; }
+.brand a svg.brand__logo { width: 60px; height: 60px; }
 .brand a svg.brand__logo path { fill: none; stroke: black; stroke-width: 1; stroke-dashoffset: 500; stroke-dasharray: 500; }
 .brand a svg.brand__logo path:hover { fill: #c59880; fill-opacity: 1; fill-rule: inherit; stroke-dashoffset: 10; stroke-dasharray: 10; }
 
