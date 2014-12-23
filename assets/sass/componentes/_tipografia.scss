@@ -21,10 +21,12 @@ h6 {
 	text-rendering 	: optimizelegibility;
 		
 		&.altheader {
-			color:$white;
+			// font-family: $google-font;
+			// color:$white;
 			font-size: 8vw;
-			font-weight: 700;
+			// font-weight: 700;
 			// text-transform: uppercase;
+			letter-spacing: 0;
 		}
 }
 

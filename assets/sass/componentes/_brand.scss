@@ -4,7 +4,7 @@
 	justify-content: flex-start; //alineado horizontal
 	align-items: center; //alineado vertical
 	padding: $gutterwidth/2;
-	background-color: $color-alt;
+	background-color: $color-base-light;
 	
 	@media all and (min-width:$bp3) {
 		// flex-direction: row;

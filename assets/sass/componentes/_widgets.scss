@@ -104,7 +104,7 @@
 	//flex-wrap: nowrap;
 	//align-content: center;
 	@include max-width($bp2);
-	min-height : $paddingbase;
+	// min-height : $paddingbase;
 	padding : $paddingbase $paddingbase;
 	border-radius: $radius;
 	margin-bottom : $baselineheight;
@@ -143,8 +143,9 @@
 
 	.well--anim {
 		@include max-width(100%);
-		@include size(100%, 600px);
+		@include size(100%, auto);
 		border-radius: 0;
+
 		p, h3 {
 			color: $white;
 		}

@@ -31,7 +31,7 @@
 }
 
   .slider__item {
-	@include max-width(900px);
+	// @include max-width(900px);
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -45,15 +45,20 @@
 
 .slider__figure {
 	position: relative;
-
+	@extend %text-center;
+	
+	img {
+		width: inherit;
+		border-radius: 100%;
+	}
 	.slider__caption {
     	z-index: 10;
-    	@extend %text-center;
-    	color: $color-base;
+    	@extend %text-left;
+    	color: $black;
     	@include font-size(36);
 		@media all and (min-width: 410px) {
-			width: 100%;
-		    height: 99%;
+			// width: 100%;
+		 //    height: 99%;
 	    	position: absolute;
 		    left: 0;
 		    right: 0;
@@ -63,7 +68,7 @@
 		}
 		&:hover {
 			opacity: 1;
-	    	background-color: transparentize($color-alt, .2);
+	    	// background-color: transparentize($color-alt, .2);
 	    }
 	}
 }
@@ -74,7 +79,6 @@
 	position: absolute;
 	top: $gutterwidth;
 	z-index: 100;
-	padding: 30px;
 }
 
 .slider__item__next {

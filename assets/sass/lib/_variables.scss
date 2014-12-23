@@ -37,12 +37,15 @@ $link-horizontal-padding:20px;
     $FONT-FACE
 \*------------------------------------*/
 // $basefont 					: "Lato", sans-serif;
-$basefont 					: Helvetica, Arial, sans-serif;
+// $basefont 					: Helvetica, Arial, sans-serif;
+$googlefont 				: "http://fonts.googleapis.com/css?family=Droid+Sans:700";
 $altfont 					: "Times New roman", serif;
 $codefont 					: "Courier New", monospace;
-$googlefont 				: "http://fonts.googleapis.com/css?family=Open+Sans";
-$baseheadingfont 			: $basefont;
-$baseheadingfontweight 		: 900;
+$googlefont2				: "http://fonts.googleapis.com/css?family=Open+Sans:300";
+$basefont				: "Open Sans", sans-serif;
+$google-font2 				: "Droid Sans", sans-serif;
+$baseheadingfont 			: $google-font2;
+$baseheadingfontweight 		: 700;
 
 $altlineheight : 1.35em;
 // $icons	: icomoon;
@@ -79,8 +82,8 @@ $color-alt			: rgb(197,152,128); //color alternativo
 $color-base-invert 	: complement($color-alt);
 $color-base-light	: lighten($color-base, 2%);
 $color-base-lighten	: lighten($color-base, 10%);
-$color-base-dark	: darken($color-base, 5%);
-$color-base-darken	: darken($color-base, 10%);
+$color-base-dark	: darken($color-base, 2%);
+$color-base-darken	: darken($color-base, 20%);
 
 /**
  * Transparencias
