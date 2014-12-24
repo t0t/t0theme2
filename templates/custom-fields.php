@@ -98,7 +98,7 @@
     <?php if(get_row_layout() == "quote"): // Frases?>
 
     <blockquote cite="<?php the_sub_field("autor"); ?>">
-    "<?php the_sub_field("quote"); ?>"<span> _<?php the_sub_field("autor"); ?></span>
+        <q>"<?php the_sub_field("quote"); ?>" </q><span><?php the_sub_field("autor"); ?></span>
     </blockquote>
 
     
@@ -225,8 +225,8 @@
 
             <a href="<?php the_permalink(); ?>">
                 <figure class="slider__figure">
-                <?php the_post_thumbnail('thumbnail'); ?>
-                <figcaption class="slider__caption"><?php the_title(); ?></figcaption>
+                    <?php the_post_thumbnail('medium'); ?>
+                    <figcaption class="slider__caption"><?php the_title(); ?></figcaption>
                 </figure>
             </a>
                 

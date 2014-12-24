@@ -4,6 +4,7 @@
 	ul {
 		margin: 0;
 		padding: 0;
+		height: 400px;
 	}
 	z-index: 1;
 
@@ -12,30 +13,20 @@
 	}
 
 	position: relative;
-	height: 300px;
-	@media all and (min-width:400px) {
-		height: 350px;
-	}
-	@media all and (min-width:500px) {
-		height: 400px;
-	}
-	@media all and (min-width:560px) {
-		height: 500px;
-	}
-	@media all and (min-width:700px) {
+	height: 375px;
+
+	@media all and (min-width:450px) {
 		height: 600px;
-	}
-	@media all and (min-width:875px) {
-		height: 700px;
 	}
 }
 
   .slider__item {
-	// @include max-width(900px);
+	@include max-width(900px);
 	position: absolute;
 	left: 0;
 	right: 0;
     opacity: 0;
+    background-color: $color-alt;
     overflow: hidden;
 
     &.current {
@@ -48,22 +39,19 @@
 	@extend %text-center;
 	
 	img {
-		width: inherit;
-		border-radius: 100%;
+		width: 70%;
+		@media all and (min-width: $bp3) {
+			width: inherit;	
+		}
 	}
 	.slider__caption {
     	z-index: 10;
-    	@extend %text-left;
+    	@extend %text-center;
     	color: $black;
     	@include font-size(36);
 		@media all and (min-width: 410px) {
 			// width: 100%;
 		 //    height: 99%;
-	    	position: absolute;
-		    left: 0;
-		    right: 0;
-	    	top: 0;
-    		line-height: 15;
     		opacity: 0;
 		}
 		&:hover {
@@ -77,8 +65,9 @@
 
 .slider__item__next, .slider__item__prev {
 	position: absolute;
-	top: $gutterwidth;
+	top: $gutterwidth*4;
 	z-index: 100;
+	height: 300px;
 }
 
 .slider__item__next {

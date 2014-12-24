@@ -97,11 +97,10 @@ blockquote  {
 	margin : 0 0 $baselineheight 0;
 	padding-left : $gutterwidth;
 	border-left : ($paddingbase / 4) solid $color-base;
-	font-family : $altfont;
 	font-style : normal;
 	line-height: $baselineheight;
-	p {
-		@include font-size(21);
+	q {
+		@include font-size(32);
 		@include margin-bottom(0);
 		color:$color-base-dark;
 	}
@@ -109,7 +108,6 @@ blockquote  {
 
 q {
 	quotes : none;
-	font-style: italic;
 }
 
 blockquote p::before,

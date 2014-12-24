@@ -92,9 +92,7 @@ input[type="submit"].btn:hover {
 .btn--slider {
 	color 				: $black;
 	border  			: none;
-	border-radius: 100%;
 	@include font-size(36);
-	@include square(100px);
 	background-color: $color-base;
 
 	&:hover {
